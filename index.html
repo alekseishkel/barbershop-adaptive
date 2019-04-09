@@ -14,7 +14,7 @@
         <nav class="nav-main">
             <button class="nav-main__toggle" type="button">Открыть меню</button>
 
-            <div class="main-nav__wrapper">
+            <div class="nav-main__wrapper">
                 <ul class="main-nav__list site-list">
                     <li class="site-list__item site-list__item--active">
                         <a>Главная</a>
@@ -33,7 +33,7 @@
                     </li>
                 </ul>
 
-                <ul class="main-nav__list user-list">
+                <ul class="nav-main__list user-list">
                     <li class="user-list__item">
                         <a href="login.html">Войти</a>
                     </li>
@@ -42,6 +42,89 @@
 
         </nav>
     </header>
+
+    <main class="container">
+        <h1 class="visually-hidden">Барбершоп "Бородинский" - истинно мужская классика</h1>
+
+        <section class="stats">
+            <header class="stats__header">
+                <h2 class="visually-hidden">Статистика Барбершопа</h2>
+                <h2 class="stats__slogan">Стрижка у нас это выгодно!</h2>
+                <p class="stats__info">Мужская стрижка требует точного подхода. Обратимся к статистике:</p>
+                <small class="stats__legend stats__legeng--top">
+                    <sup>*</sup> — приведённые данные ложь
+                </small>
+                <small class="stats__legend stats__legeng--bottom">
+                        <sup>*</sup> — приведённые данные ложь
+                    </small>
+            </header>
+
+            <table class="stats__list">
+                <tr>
+                    <td class="stats-value">1 500 *</td>
+                    <td class="stats-field">рублей вложений</td>
+                </tr>
+                <tr>
+                    <td class="stats-value">7 200</td>
+                    <td class="stats-field">секунд времени мастера</td>
+                </tr>
+                <tr>
+                    <td class="stats-value">90 000</td>
+                    <td class="stats-field">постриженных волос</td>
+                </tr>
+                <tr>
+                    <td class="stats-value">500 000 *</td>
+                    <td class="stats-field">лайков и комплиментов</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="advantages">
+            <div class="advantages__wrapper slider">
+                <h2 class="visually-hidden">Наши преимущества</h2>
+                <ul class="advantages__list slider__list">
+                    <li class="advantages__item advantages__item--fast slider__item">
+                        <h3 class="advantages__title">Быстро</h3>
+                        <p class="advantages__description">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки</p>
+                    </li>
+                    <li class="advantages__item advantages__item--cool slider__item">
+                        <h3 class="advantages__title">Круто</h3>
+                        <p class="advantages__description">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.
+                            </p>
+                    </li>
+                    <li class="advantages__item advantages__item--expensive slider__item">
+                        <h3 class="advantages__title">Дорого</h3>
+                        <p class="advantages__description">Наши мастера — профессионалы своего делаи не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
+                    </li>
+                </ul>
+                <p class="advantages__toogle slider__toggles">
+                    <button class="slider__toggle" type="button">1</button>
+                    <button class="slider__toggle" type="button">2</button>
+                    <button class="slider__toggle" type="button">3</button>
+                </p>
+            </div>
+        </section>
+
+        <section class="news">
+            <h2 class="news__title">Новости и акции</h2>
+            <ul class="news__list">
+                <li class="news__item">
+                    <time class="datetime" datetime="2019-09-29">
+                        <b>29</b>сент
+                    </time>
+                    <p class="news__text">Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.</p>
+                </li>
+                <li class="news__item">
+                    <time class="datetime" datetime="2019-09-19">
+                        <b>19</b>сент
+                    </time>
+                    <p class="news__text">В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды. Спешите записаться!</p>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
 </body>
 
 </html>
