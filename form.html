@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Барбершоп "Бородинский"</title>
+    <title>Запись на стрижку</title>
 </head>
 
 <body>
@@ -46,14 +46,119 @@
     <main class="container">
         <h1 class="visually-hidden">Записаться на стрижку</h1>
         <section class="recording">
-            <h2 class="recording__form">Запись на стрижку</h2>
-            <form class="form_recording" action="https://echo.htmlacademy.ru" method="GET">
+            <h2 class="recording__form-title">Запись на стрижку</h2>
+
+            <form class="recording__form" action="https://echo.htmlacademy.ru" method="GET">
                 <fieldset>
-                    
+                    <legend class="visually-hidden">Контактные данные</legend>
+                    <input class="recording__field" type="text" name="surname" placeholder="Фамилия">
+                    <br>
+                    <input class="recording__field" type="text" name="name" placeholder="Имя">
+                    <br>
+                    <input class="recording__field" type="text" name="patronymic" placeholder="Отчество">
+                    <br>
+                    <input class="recording__field" type="tel" name="tel" placeholder="Контактный телефон">
+                    <br>
+                    <input class="recording__field" type="email" name="email" placeholder="Контактный e-mail">
+                    <br>
+                    <textarea class="recording__extra-info" name="extra-info" id="" cols="30" rows="10"></textarea>
+                    <br>
                 </fieldset>
+
+                <fieldset>
+                    <legend>Выберите модель бороды:</legend>
+                    <ul>
+                        <li class="beard-model-item">
+                            <input class="recoding__radio visually-hidden" type="radio" id="admiral-radio-radio" name="beard-model" value="admiral">
+                            <label for="admiral-radio-radio">адмирал</label>
+                        </li>
+                        <li class="beard-model-item">
+                            <input class="recoding__radio visually-hidden" type="radio" id="lumberjack-radio-radio" name="beard-model" value="lumberjack">
+                            <label for="lumberjack-radio-radio">лесоруб</label>
+                        </li>
+                        <li class="beard-model-item">
+                            <input class="recoding__radio visually-hidden" type="radio" id="polar-explorer-radio-radio" name="beard-model" value="polar-explorer">
+                            <label for="polar-explorer-radio-radio">полярник</label>
+                        </li>
+                        <li class="beard-model-item">
+                            <input class="recoding__radio visually-hidden" type="radio" id="boyar-radio-radio" name="beard-model" value="boyar">
+                            <label for="boyar-radio-radio">боярин</label>
+                        </li>
+                        <li class="beard-model-item">
+                            <input class="recoding__radio visually-hidden" type="radio" id="sage-radio-radio" name="beard-model" value="sage">
+                            <label for="sage-radio-radio">мудрец</label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Дополнительные услуги:</legend>
+                    <ul>
+                        <li class="extra-services-item">
+                                <input class="recording__checkbox visually-hidden" type="checkbox" id="beard-color-checkbox" name="beard-color" checked>
+                                <label for="beard-color-checkbox">Подкрасить бороду</label>
+                        </li>
+                        <li class="extra-services-item">
+                                <input class="recording__checkbox visually-hidden" type="checkbox" id="mustache-twist-checkbox" name="mustache-twist" checked>
+                                <label for="mustache-twist-checkbox">Накрутить усы</label>
+                        </li>
+                        <li class="extra-services-item">
+                                <input class="recording__checkbox visually-hidden" type="checkbox" id="beard-comb-checkbox" name="beard-comb">
+                                <label for="beard-comb-checkbox">Причесать бороду</label>
+                        </li>
+                        <li class="extra-services-item">
+                                <input class="recording__checkbox visually-hidden" type="checkbox" id="hair-level-off-checkbox" name="hair-level-off">
+                                <label for="hair-level-off-checkbox">Подровнять виски</label>
+                        </li>
+                        <li class="extra-services-item">
+                                <input class="recording__checkbox visually-hidden" type="checkbox" id="gray-remove-checkbox" name="gray-remove">
+                                <label for="gray-remove-checkbox">Убрать седину</label>
+                        </li>
+                        <li class="extra-services-item">
+                                <input class="recording__checkbox visually-hidden" type="checkbox" id="bald-polish-checkbox" name="bald-polish">
+                                <label for="bald-polish-checkbox">Отполировать лысину</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button class="recording__button button" type="submit">Отправить заявку</button>
             </form>
         </section>
     </main>
+
+    <footer class="footer-main">
+            <div class="footer-main__wrapper">
+                <div class="footer-main-contacts footer-contacts">
+                    <b class="footer-contacts__title">Барбершоп Бородинский</b>
+                    <p class="footer-contacts__text"> г. Санкт-Петербург, ул. Большая Конюшенная 19/8
+                        <br>
+                        <a class="contacts__phone" href="tel:+78125556666">
+                            <span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66
+                        </a>
+                    </p>
+                </div>
+    
+                <div class="footer-main__social-networks social">
+                    <b class="social-title">Давайте дружить!</b>
+                    <ul class="social__list">
+                        <li class="social-item">
+                            <a class="social-link-vk" href="https://vk.com">Мы Вконтакте</a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-link-facebook" href="https://www.facebook.com">Мы в Фейсбуке</a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-link-instagram" href="https://www.instagram.com/?hl=ru">Мы в Инстаграме</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="footer-main__copyright copyright">
+                    <b class="copyright__title">Разработано:</b>
+                    <a class="button copyright__link" href="https://htmlacademy.ru">HTML ACADEMY</a>
+                </div>
+            </div>
+        </footer>
+
 </body>
 
 </html>
