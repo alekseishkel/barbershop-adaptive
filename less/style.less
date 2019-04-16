@@ -1,3 +1,53 @@
 // out: ../css/
 
+@tablet-width: 768px;
+@desktop-width: 1200px;
+@bg-darkgray: #282828;
+
+@font-face {
+    font-family: "PT Sans Narrow";
+    src: url("fonts/ptsansnarrow.woff2") format("woff2");
+    src: url("fonts/ptsansnarrow.woff") format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PT Sans Narrow Bold";
+    src: url("fonts/ptsansnarrowbold.woff2") format("woff2");
+    src: url("fonts/ptsansnarrowbold.woff") format("woff");
+    font-weight: bold;
+}
+
+@tablet-width: 768px;
+@desktop-width: 1200px;
+@bg-darkgray: #282828;
+
+body {
+    max-width: 320px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans Narrow";
+    font-size: 18px;
+    line-height: 27px;
+    color: #f7f4f1;
+    font-weight: normal;
+    background-color: @bg-darkgray;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Файл mixins*/
+
+.no-outline() {
+    outline: none;
+    background-color: transparent;
+
+    &::before {
+        display: none;
+    }
+}
+
 @import "nav-main.less";
