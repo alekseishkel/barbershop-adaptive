@@ -1,0 +1,38 @@
+.nav-main {
+  width: 320px;
+  margin: 0 auto;
+}
+.nav-main__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@media (min-width: 768px) {
+  .nav-main {
+    width: auto;
+    margin: 0;
+  }
+  .nav-main__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 640px;
+    margin: 0 auto;
+  }
+  .site-list {
+    width: 570px;
+  }
+  .user-list {
+    width: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .nav-main__wrapper {
+    width: 960px;
+  }
+  .site-list {
+    width: 780px;
+  }
+  .user-list {
+    width: 160px;
+  }
+}
