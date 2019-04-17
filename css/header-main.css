@@ -1,0 +1,18 @@
+.header-main {
+  display: flex;
+  flex-direction: column;
+}
+.header-main__logo-link {
+  max-height: 85px;
+}
+@media (min-width: 768px) {
+  .header-main__logo-link {
+    order: 2;
+    height: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  .header-main__logo-link {
+    height: 648px;
+  }
+}
