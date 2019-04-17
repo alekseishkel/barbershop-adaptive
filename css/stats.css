@@ -1,0 +1,34 @@
+.stats {
+  width: 320px;
+  margin: 0 auto;
+}
+.stats__header {
+  padding: 30px 35px 25px 35px;
+}
+.stats__list {
+  width: 100%;
+  background-color: #4e4e4e;
+}
+@media (min-width: 768px) {
+  .stats {
+    width: 640px;
+    margin: 0 auto;
+    margin-top: -185px;
+  }
+  .stats__list {
+    display: flex;
+  }
+}
+@media (min-width: 1200px) {
+  .stats {
+    display: flex;
+    width: 960px;
+    margin-top: -160px;
+  }
+  .stats__header {
+    width: 250px;
+  }
+  .stats__list {
+    width: 640px;
+  }
+}

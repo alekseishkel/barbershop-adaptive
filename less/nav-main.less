@@ -1,14 +1,14 @@
 // out: ../css/
 
-.nav-main {
-    width: 320px;
-    margin: 0 auto;
-}
+@tablet-width: 768px;
+@desktop-width: 1200px;
 
-.nav-main__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.nav-main {
+    position: relative;
+    width: 320px;
+    min-height: 51px;
+    margin: 0 auto;
+    background-color: #826550;
 }
 
 @media (min-width: @tablet-width) {
@@ -44,5 +44,33 @@
 
     .user-list {
         width: 160px;
+    }
+}
+
+.nav-main__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-list__item {
+    display: block;
+    line-height: 50px;
+}
+
+.nav-main__toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 70px;
+    height: 50px;
+    background-color: #6a4d38;
+    border: none;
+
+    &:hover,
+    &:active {
+        background-color: #755a46;
     }
 }

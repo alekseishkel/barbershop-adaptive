@@ -1,11 +1,9 @@
 .nav-main {
+  position: relative;
   width: 320px;
+  min-height: 51px;
   margin: 0 auto;
-}
-.nav-main__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  background-color: #826550;
 }
 @media (min-width: 768px) {
   .nav-main {
@@ -35,4 +33,28 @@
   .user-list {
     width: 160px;
   }
+}
+.nav-main__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.site-list__item {
+  display: block;
+  line-height: 50px;
+}
+.nav-main__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 70px;
+  height: 50px;
+  background-color: #6a4d38;
+  border: none;
+}
+.nav-main__toggle:hover,
+.nav-main__toggle:active {
+  background-color: #755a46;
 }
