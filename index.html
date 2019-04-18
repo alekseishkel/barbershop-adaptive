@@ -10,10 +10,10 @@
 
 <body>
     <header class="header-main">
-        <a class="header-main__logo-link"><img class="header-index__logo-header" width="226" height="30" src="img/logotype-mobile.svg.png"
-                alt="Логотип Барбершопа Бородинский"></a>
+        <a class="header-main__logo-link"><img class="header-index__logo-header" width="226" height="30"
+                src="img/logotype-mobile.svg.png" alt="Логотип Барбершопа Бородинский"></a>
 
-        <nav class="nav-main">
+        <nav class="nav-main nav-main--closed">
             <button class="nav-main__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
             <div class="nav-main__wrapper">
@@ -37,7 +37,14 @@
 
                 <ul class="nav-main__list user-list">
                     <li class="user-list__item">
-                        <a href="login.html">Войти</a>
+                        <a href="login.html">
+                            <svg class="user-list__login-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                                <polygon points="0,7 7,7 7,4.1 11,8 7,11.9 7,9.1 0,9 " />
+                                <polygon points="7,0 7,2 14,2 14,14 7,14 7,16 16,16 16,0 " />
+                            </svg>
+                            Войти
+                        </a>
                     </li>
                 </ul>
             </div>
