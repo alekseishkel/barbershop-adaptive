@@ -38,7 +38,7 @@ img {
 /*Файл mixins*/
 .nav-main {
   position: relative;
-  width: 320px;
+  width: 100%;
   min-height: 51px;
   margin: 0 auto;
   background-color: #826550;
@@ -208,7 +208,7 @@ img {
 @media (min-width: 768px) {
   .user-list__login-icon {
     top: 28px;
-    left: 12px;
+    left: 32px;
   }
   .user-list__item a:hover,
   .user-list__item a:focus,
@@ -272,8 +272,8 @@ img {
   .nav-main__wrapper {
     display: flex;
     justify-content: space-between;
-    width: 640px;
-    margin: 0 auto;
+    width: 84%;
+    max-width: 960px;
   }
   .nav-main .nav-main__toggle {
     display: none;
@@ -283,6 +283,7 @@ img {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 570px;
+    flex-grow: 1;
   }
   .site-list__item {
     margin-right: 32px;
@@ -323,11 +324,9 @@ img {
   }
 }
 @media (min-width: 1200px) {
-  .nav-main__wrapper {
-    width: 960px;
-  }
   .site-list {
     width: 780px;
+    flex-grow: 1;
   }
   .site-list__item {
     margin-right: 0;
@@ -490,6 +489,10 @@ img {
   }
   .stats__header {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 33px 40px 30px;
     min-height: 129px;
   }
   .stats__header::before {
@@ -501,8 +504,58 @@ img {
     border-bottom-color: #fff;
     transform: rotate(45deg);
   }
+  .stats__slogan {
+    width: 240px;
+    margin-bottom: 18px;
+    padding: 0;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: left;
+    text-transform: none;
+  }
+  .stats__info {
+    width: 210px;
+    margin-top: 6px;
+    padding-right: 40px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .stats__legend--top {
+    display: block;
+    width: 240px;
+    color: rgba(0, 0, 0, 0.3);
+  }
+  .stats__legend--bottom {
+    display: none;
+  }
   .stats__list {
     display: flex;
+  }
+  .stats__list tbody {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .stats__list tr {
+    width: 245px;
+    padding: 32px 35px 27px 40px;
+  }
+  .stats__list td {
+    display: block;
+    width: auto;
+    padding: 0;
+  }
+  .stats__value {
+    margin-bottom: 12px;
+    font-size: 72px;
+    line-height: 72px;
+  }
+  .stats__field {
+    font-size: 20px;
+    text-align: left;
+  }
+  .stats__field br {
+    display: none;
   }
 }
 @media (min-width: 1200px) {
@@ -512,9 +565,27 @@ img {
     margin-top: -160px;
   }
   .stats__header {
-    width: 250px;
+    width: 240px;
+  }
+  .stats__header::before {
+    top: 22px;
+  }
+  .stats__slogan {
+    width: 240px;
+    margin-bottom: 42px;
+  }
+  .stats__info {
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 32px;
+    margin-right: 35px;
+    padding-right: 0;
+  }
+  .stats__legend--top {
+    width: auto;
   }
   .stats__list {
     width: 640px;
+    display: flex;
   }
 }

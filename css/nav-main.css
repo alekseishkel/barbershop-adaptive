@@ -1,6 +1,6 @@
 .nav-main {
   position: relative;
-  width: 320px;
+  width: 100%;
   min-height: 51px;
   margin: 0 auto;
   background-color: #826550;
@@ -170,7 +170,7 @@
 @media (min-width: 768px) {
   .user-list__login-icon {
     top: 28px;
-    left: 12px;
+    left: 32px;
   }
   .user-list__item a:hover,
   .user-list__item a:focus,
@@ -234,8 +234,8 @@
   .nav-main__wrapper {
     display: flex;
     justify-content: space-between;
-    width: 640px;
-    margin: 0 auto;
+    width: 84%;
+    max-width: 960px;
   }
   .nav-main .nav-main__toggle {
     display: none;
@@ -245,6 +245,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 570px;
+    flex-grow: 1;
   }
   .site-list__item {
     margin-right: 32px;
@@ -285,9 +286,6 @@
   }
 }
 @media (min-width: 1200px) {
-  .nav-main__wrapper {
-    width: 960px;
-  }
   .site-list {
     width: 780px;
   }
