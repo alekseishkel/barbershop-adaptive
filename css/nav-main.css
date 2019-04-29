@@ -134,7 +134,6 @@
   display: block;
   padding: 0 21px 0 49px;
   line-height: 49px;
-  border-top: 1px solid #71543f;
 }
 .user-list__item a:hover,
 .user-list__item a:focus,

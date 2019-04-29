@@ -172,7 +172,6 @@ img {
   display: block;
   padding: 0 21px 0 49px;
   line-height: 49px;
-  border-top: 1px solid #71543f;
 }
 .user-list__item a:hover,
 .user-list__item a:focus,
@@ -326,7 +325,6 @@ img {
 @media (min-width: 1200px) {
   .site-list {
     width: 780px;
-    flex-grow: 1;
   }
   .site-list__item {
     margin-right: 0;
@@ -404,7 +402,7 @@ img {
   }
 }
 .stats {
-  width: 320px;
+  width: auto;
   margin: 0 auto;
 }
 .stats__header {
@@ -483,7 +481,8 @@ img {
 }
 @media (min-width: 768px) {
   .stats {
-    width: 640px;
+    width: 84%;
+    max-width: 1200px;
     margin: 0 auto;
     margin-top: -185px;
   }
@@ -505,7 +504,7 @@ img {
     transform: rotate(45deg);
   }
   .stats__slogan {
-    width: 240px;
+    width: 50%;
     margin-bottom: 18px;
     padding: 0;
     font-size: 40px;
@@ -514,7 +513,7 @@ img {
     text-transform: none;
   }
   .stats__info {
-    width: 210px;
+    width: 32.8%;
     margin-top: 6px;
     padding-right: 40px;
     text-align: left;
@@ -523,7 +522,7 @@ img {
   }
   .stats__legend--top {
     display: block;
-    width: 240px;
+    width: 50%;
     color: rgba(0, 0, 0, 0.3);
   }
   .stats__legend--bottom {
@@ -537,7 +536,8 @@ img {
     flex-wrap: wrap;
   }
   .stats__list tr {
-    width: 245px;
+    width: 50%;
+    box-sizing: border-box;
     padding: 32px 35px 27px 40px;
   }
   .stats__list td {
@@ -561,11 +561,12 @@ img {
 @media (min-width: 1200px) {
   .stats {
     display: flex;
-    width: 960px;
     margin-top: -160px;
   }
   .stats__header {
     width: 240px;
+    flex-grow: 1;
+    flex-direction: column;
   }
   .stats__header::before {
     top: 22px;
@@ -583,9 +584,46 @@ img {
   }
   .stats__legend--top {
     width: auto;
+    margin-top: auto;
   }
   .stats__list {
     width: 640px;
     display: flex;
+    flex-grow: 1;
   }
+}
+.advantages {
+  width: auto;
+  background-color: #242424;
+}
+.slider__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.advantages__title {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding-top: 150px;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.advantages__title--scissors::before {
+  position: absolute;
+  content: "";
+  top: 24px;
+  right: calc 20%;
+  width: 95px;
+  height: 94px;
+  background-image: url(../img/advantages-scissors.png);
+}
+.advantages__description {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.news {
+  background-color: #fff;
 }
