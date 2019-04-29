@@ -16,14 +16,32 @@
   text-align: center;
   margin-bottom: 14px;
 }
-.advantages__title--scissors::before {
+.advantages__title--fast::before {
   position: absolute;
   content: "";
   top: 24px;
-  right: calc 20%;
+  left: calc(50%);
   width: 95px;
   height: 94px;
   background-image: url(../img/advantages-scissors.png);
+}
+.advantages__title--cool::before {
+  position: absolute;
+  content: "";
+  top: 24px;
+  left: calc(50%);
+  width: 95px;
+  height: 94px;
+  background-image: url(../img/advantages-cool.png);
+}
+.advantages__title--expensive::before {
+  position: absolute;
+  content: "";
+  top: 24px;
+  left: calc(50%);
+  width: 95px;
+  height: 94px;
+  background-image: url(../img/advantages-expensive.png);
 }
 .advantages__description {
   margin: 0;
