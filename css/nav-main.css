@@ -183,7 +183,7 @@
 .user-list__item a:active .user-list__login-icon {
   opacity: 1;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .nav-main--closed .site-list__item {
     display: none;
   }

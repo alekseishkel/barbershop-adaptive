@@ -4,12 +4,14 @@
 @desktop-width: 1200px;
 
 .advantages {
-    width: auto;
+    width: 84%;
+    max-width: 960px;
+    margin: 0 auto;
     background-color: #242424;
 }
 
-.slider__list {
-   // position: relative;
+.advantages__list {
+    position: relative;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -23,13 +25,15 @@
     padding-top: 150px;
     text-align: center;
     margin-bottom: 14px;
+    text-transform: uppercase;
 }
 
 .advantages__title--fast::before {
     position: absolute;
     content: "";
     top: 24px;
-    left: calc(50%);
+    left: 50%;
+    transform: translateX(-50%); 
     width: 95px;
     height: 94px;
     background-image: url(../img/advantages-scissors.png);
@@ -39,9 +43,10 @@
     position: absolute;
     content: "";
     top: 24px;
-    left: calc(50%);
+    left: 50%;
+    transform: translateX(-50%);
     width: 95px;
-    height: 94px;
+    height: 88px;
     background-image: url(../img/advantages-cool.png);
 }
 
@@ -49,16 +54,41 @@
     position: absolute;
     content: "";
     top: 24px;
-    left: calc(50%);
+    left: 50%;
+    transform: translateX(-50%);
     width: 95px;
-    height: 94px;
+    height: 91px;
     background-image: url(../img/advantages-expensive.png);
 }
 
 .advantages__description {
-    margin: 0;
-    padding: 0;
+    margin: 0 20px;
+    padding: 0 25px;
     text-align: center;
+}
+
+.advantages__item--cool,
+.advantages__item--expensive {
+    display: none;
+}
+
+@media (min-width: @tablet-width) {
+    .advantages__item--cool,
+    .advantages__item--expensive {
+    display: block;
+    }
+
+    .advantages {
+        background-color: #353535;
+    }
+
+    .news svg {
+        height: 42px;
+    }
+
+    .news polygon {
+        fill: #353535;
+    }
 }
 
 .news {
