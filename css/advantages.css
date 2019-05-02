@@ -17,6 +17,8 @@
   margin: 0;
   padding-top: 150px;
   text-align: center;
+  font-size: 30px;
+  line-height: 30px;
   margin-bottom: 14px;
   text-transform: uppercase;
 }
@@ -51,13 +53,9 @@
   background-image: url(../img/advantages-expensive.png);
 }
 .advantages__description {
-  margin: 0 20px;
-  padding: 0 25px;
+  padding: 0 18px;
+  font-size: 20px;
   text-align: center;
-}
-.advantages__item--cool,
-.advantages__item--expensive {
-  display: none;
 }
 @media (min-width: 768px) {
   .advantages__item--cool,
@@ -67,11 +65,100 @@
   .advantages {
     background-color: #353535;
   }
+  .advantages__item {
+    position: relative;
+  }
+  .advantages__title {
+    margin: 0;
+    padding-top: 43px;
+    padding-left: 160px;
+    text-align: left;
+  }
+  .advantages__description {
+    position: relative;
+    margin: 0;
+    padding: 13px 24px 39px 160px;
+    text-align: left;
+  }
+  .advantages__item::after {
+    position: absolute;
+    content: "";
+    left: 160px;
+    right: 40px;
+    height: 1px;
+    background-color: #4a4a4a;
+  }
+  .advantages__item:last-child::after {
+    display: none;
+  }
+  .advantages__title--fast::before {
+    position: absolute;
+    content: "";
+    top: 46px;
+    left: 78px;
+    width: 95px;
+    height: 94px;
+    background-image: url(../img/advantages-scissors.png);
+  }
+  .advantages__title--cool::before {
+    position: absolute;
+    content: "";
+    top: 46px;
+    left: 78px;
+    width: 95px;
+    height: 88px;
+    background-image: url(../img/advantages-cool.png);
+  }
+  .advantages__title--expensive::before {
+    position: absolute;
+    content: "";
+    top: 46px;
+    left: 78px;
+    width: 95px;
+    height: 91px;
+    background-image: url(../img/advantages-expensive.png);
+  }
   .news svg {
     height: 42px;
   }
   .news polygon {
     fill: #353535;
+  }
+}
+@media (min-width: 1200px) {
+  .advantages__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .advantages {
+    max-width: 1200px;
+  }
+  .advantages__title {
+    padding: 0;
+    padding-top: 203px;
+    text-align: center;
+  }
+  .advantages__description {
+    padding: 12px 38px 0;
+    text-align: center;
+  }
+  .advantages__item {
+    width: 320px;
+  }
+  .advantages__item::after {
+    display: none;
+  }
+  .advantages__title--fast::before {
+    top: 79px;
+    left: 50%;
+  }
+  .advantages__title--cool::before {
+    top: 79px;
+    left: 50%;
+  }
+  .advantages__title--expensive::before {
+    top: 79px;
+    left: 50%;
   }
 }
 .news {
