@@ -54,18 +54,39 @@ img {
     overflow: hidden;
 }
 
-/*Файл mixins*/
+.button {
+    display: block;
+    box-sizing: border-box;
+    width: 280px;
+    height: 50px;
+    border: 1px solid #e5ddd5;
+    line-height: 50px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
 
-.no-outline() {
-    outline: none;
-    background-color: transparent;
+button:focus,
+button:link,
+button:visited {
+    color: #000;
+}
 
-    &::before {
-        display: none;
-    }
+.button:hover {
+    border: 1px solid #d5cabe;
+}
+
+.button:active {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: #d5c9bd;
+    border: 1px solid #d5c9bd;
 }
 
 @import "nav-main.less";
 @import "header-main.less";
 @import "stats.less";
 @import "advantages.less";
+@import "news.less";
+@import "reviews.less";

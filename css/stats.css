@@ -158,6 +158,7 @@
 @media (min-width: 1200px) {
   .stats {
     display: flex;
+    max-width: 1200px;
     margin-top: -160px;
   }
   .stats__header {

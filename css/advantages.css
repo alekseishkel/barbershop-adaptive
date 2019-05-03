@@ -19,6 +19,7 @@
   text-align: center;
   font-size: 30px;
   line-height: 30px;
+  font-weight: bold;
   margin-bottom: 14px;
   text-transform: uppercase;
 }
@@ -53,9 +54,39 @@
   background-image: url(../img/advantages-expensive.png);
 }
 .advantages__description {
+  margin: 0;
+  margin-bottom: 30px;
   padding: 0 18px;
   font-size: 20px;
   text-align: center;
+}
+.advantages__item {
+  display: none;
+}
+.slider__item--active {
+  display: block;
+}
+.advantages__toogle {
+  margin: 0;
+  margin-bottom: 13px;
+  text-align: center;
+}
+.slider__toggle {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  margin-left: 23px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+  transform: rotate(45deg);
+}
+.slider__toggle--active {
+  margin-left: 0;
+  border: 2px solid #ffffff;
+  background-color: #fff;
+}
+.slider__toggle span {
+  display: none;
 }
 @media (min-width: 768px) {
   .advantages__item--cool,
@@ -124,6 +155,9 @@
   .news polygon {
     fill: #353535;
   }
+  .advantages__toogle {
+    display: none;
+  }
 }
 @media (min-width: 1200px) {
   .advantages__list {
@@ -160,7 +194,7 @@
     top: 79px;
     left: 50%;
   }
-}
-.news {
-  background-color: #fff;
+  .advantages__toogle {
+    display: none;
+  }
 }

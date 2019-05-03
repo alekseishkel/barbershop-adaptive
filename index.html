@@ -91,7 +91,7 @@
             <div class="advantages__wrapper slider">
                 <h2 class="visually-hidden">Наши преимущества</h2>
                 <ul class="advantages__list slider__list">
-                    <li class="advantages__item advantages__item--fast slider__item">
+                    <li class="advantages__item advantages__item--fast slider__item slider__item--active">
                         <h3 class="advantages__title advantages__title--fast">Быстро</h3>
                         <p class="advantages__description">Мы делаем свою работу быстро! Два часа пролетят незаметно
                             и
@@ -111,9 +111,9 @@
                     </li>
                 </ul>
                 <p class="advantages__toogle slider__toggles">
-                    <input class="slider__toggle slider__toggle--active" type="checkbox">
-                    <input class="slider__toggle" type="checkbox">
-                    <input class="slider__toggle" type="checkbox">
+                    <button class="slider__toggle slider__toggle--active" type="button"><span>1</span></button>
+                    <button class="slider__toggle" type="button"><span>2</span></button>
+                    <button class="slider__toggle" type="button"><span>3</span></button>
                 </p>
             </div>
 
@@ -154,10 +154,10 @@
         </section>
 
         <section class="reviews">
-            <div class="rewiews__wrapper slider">
+            <div class="reviews__wrapper slider">
                 <h2 class="reviews__title">Отзывы о нас</h2>
-                <a class="rewiews__write button" href="#">Оставить свой</a>
-                <div class="rewiews_list slider__list">
+                <a class="reviews__write button" href="#">Оставить свой</a>
+                <div class="reviews_list slider__list">
 
                     <blockquote class="reviews__item slider__item">
                         <p class="reviews__author-picture">
@@ -165,27 +165,9 @@
                                 alt="Фото Трэвиса Баркера">
                         </p>
                         <cite class="reviews__author-name">Трэвис Баркер</cite>
-                        <p class="rewiews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы
+                        <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы
                             было
                             видно новую татуировку!</p>
-                    </blockquote>
-
-                    <blockquote class="reviews__item slider__item">
-                        <p class="reviews__author-picture">
-                            <img class="reviews__author-image" src="img/travis-barker.jpg" width="50" height="33"
-                                alt="Фото Джона Смита">
-                        </p>
-                        <cite class="reviews__author-name">Джон Смит</cite>
-                        <p class="rewiews__text">Отличную стрижку мне сделали ребята.</p>
-                    </blockquote>
-
-                    <blockquote class="reviews__item slider__item">
-                        <p class="reviews__author-picture">
-                            <img class="reviews__author-image" src="img/travis-barker.jpg" width="50" height="33"
-                                alt="Фото Ивана Бородайло">
-                        </p>
-                        <cite class="reviews__author-name">Иван Бородайло</cite>
-                        <p class="rewiews__text">В Бородинском ваша борода в надёжных руках!</p>
                     </blockquote>
 
                     <button class="reviews__next" type="button">Следующий отзыв</button>
@@ -194,9 +176,9 @@
                 </div>
 
                 <p class="reviews__toggles slider__toggles">
-                    <button class="slider__toggle" type="button">1</button>
-                    <button class="slider__toggle" type="button">2</button>
-                    <button class="slider__toggle" type="button">3</button>
+                    <button class="slider__toggle slider__toggle--reviews .slider__toggle--active" type="button"><span>1</span></button>
+                    <button class="slider__toggle slider__toggle--reviews" type="button"><span>2</span></button>
+                    <button class="slider__toggle slider__toggle--reviews" type="button"><span>3</span></button>
                 </p>
             </div>
         </section>
@@ -235,7 +217,7 @@
             </div>
         </div>
     </footer>
-    
+
     <script src="script/script.js"></script>
 
 </body>
