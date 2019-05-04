@@ -111,6 +111,9 @@
     padding: 13px 24px 39px 160px;
     text-align: left;
   }
+  .slider__list {
+    margin-bottom: 43px;
+  }
   .advantages__item::after {
     position: absolute;
     content: "";
