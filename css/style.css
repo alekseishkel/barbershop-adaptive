@@ -53,7 +53,7 @@ img {
   text-decoration: none;
   text-transform: uppercase;
 }
-button:focus,
+button:active,
 button:link,
 button:visited {
   color: #000;
@@ -1199,12 +1199,90 @@ button:visited {
   width: auto;
   max-width: 640px;
   margin: 0 auto;
+  margin-top: -7px;
+  padding-top: 40px;
+  padding-bottom: 24px;
+  border-top: 1px solid #353535;
   text-align: center;
-}
-.footer-main-contacts {
-  padding: 40px 45px 13px;
 }
 .footer-contacts__text {
   margin: 0;
-  margin-top: 17px;
+  padding: 10px 45px 18px;
+}
+.footer-contacts .contacts__phone {
+  display: block;
+  margin: 0 auto;
+  color: #ffffff;
+  border: 1px solid #353535;
+}
+.footer-contacts .contacts__phone:hover {
+  border: 1px solid #d5cabe;
+}
+.contacts__phone:active,
+.contacts__phone:link,
+.contacts__phone:visited {
+  color: #ffffff;
+}
+.contacts__phone-mobile {
+  display: none;
+}
+.social__title {
+  display: none;
+}
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 321px;
+  margin: 0;
+  margin: 0 auto;
+  margin-top: 28px;
+  padding: 0;
+  list-style: none;
+}
+.social-link--vk {
+  display: block;
+  width: 107px;
+  height: 101px;
+  background-image: url('../img/social-link-vk.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: 1px solid #353535;
+  border-right: none;
+  box-sizing: border-box;
+}
+.social-link--facebook {
+  display: block;
+  width: 107px;
+  height: 101px;
+  background-image: url('../img/social-link-facebook.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: 1px solid #353535;
+  border-right: none;
+  box-sizing: border-box;
+}
+.social-link--instagram {
+  display: block;
+  width: 107px;
+  height: 101px;
+  background-image: url('../img/social-link-instagram.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: 1px solid #353535;
+  box-sizing: border-box;
+}
+.footer-main__copyright {
+  margin-top: 35px;
+}
+.copyright__link {
+  margin: 0 auto;
+  margin-top: 14px;
+  color: #ffffff;
+  border: 1px solid #353535;
+}
+.copyright__link:active,
+.copyright__link:link,
+.copyright__link:visited {
+  color: #ffffff;
 }
