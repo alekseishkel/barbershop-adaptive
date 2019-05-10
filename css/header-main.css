@@ -2,6 +2,7 @@
   display: flex;
   margin: 0 auto;
   flex-direction: column;
+  background-color: #242424;
 }
 .header-main__logo-link {
   text-align: center;

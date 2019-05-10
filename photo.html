@@ -3,24 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Запись на стрижку</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Наши работы</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
 </head>
 
-<body>
+<body class="inner-page">
     <header class="header-main">
-        <a class="header-main__logo-link"><img class="header-index__logo-header" width="226" height="30" src="logo.svg"
-                alt="Логотип Барбершопа Бородинский"></a>
-
-        <nav class="nav-main">
-            <button class="nav-main__toggle" type="button">Открыть меню</button>
+        <a class="header-main__logo-link"><img class="header-index__logo-header" width="226" height="30"
+                src="img/logotype-mobile.svg.png" alt="Логотип Барбершопа Бородинский"></a>
+        <nav class="nav-main nav-main--closed nav-main--no-js">
+            <button class="nav-main__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
             <div class="nav-main__wrapper">
-                <ul class="main-nav__list site-list">
-                    <li class="site-list__item site-list__item--active">
-                        <a>Главная</a>
-                    </li>
+                <ul class="nav-main__list site-list">
                     <li class="site-list__item">
-                        <a href="index.html">Наши работы</a>
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="site-list__item site-list__item--active">
+                        <a href="photo.html">Наши работы</a>
                     </li>
                     <li class="site-list__item">
                         <a href="index.html">Записаться</a>
@@ -35,7 +37,14 @@
 
                 <ul class="nav-main__list user-list">
                     <li class="user-list__item">
-                        <a href="login.html">Войти</a>
+                        <a class="user-list__login" href="login.html">
+                            <svg class="user-list__login-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+                                <polygon points="0,7 7,7 7,4.1 11,8 7,11.9 7,9.1 0,9 " />
+                                <polygon points="7,0 7,2 14,2 14,14 7,14 7,16 16,16 16,0 " />
+                            </svg>
+                            Войти
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -49,57 +58,72 @@
         <section class="photogallery">
             <h2 class="photogallery__title">Наши работы</h2>
             <a class="photogallery__button button" href="index.html">На главную</a>
-            <b class="photogallery__work-of-the-month">Работа месяца</b>
             <ul class="photogallery__list">
+                
                 <li class="photogallery__item">
                     <p class="photogallery__photo">
                         <img class="photogallery__photo-image" src="img/lzhepiotr-photo.jpg"
                             alt="Фото Лжепётра Мчиславского">
+                        <b class="photogallery__work-of-the-month">Работа месяца</b>
                     </p>
-                    <b class="photogallery__name">Лжепётр Мчиславский</b>
-                    <p class="photogallery__text">Где я только не стригся, но так как делаете это вы — не умеет никто
-                        другой! Еще раз спасибо и до скорого!</p>
-                    <ul class="photogallery__srevices">
-                        <li class="photogallery__service sevice-haircut">Стрижка</li>
-                        <li class="photogallery__service service-shaving">Бритье</li>
-                        <li class="photogallery__service service-mustache">Усы</li>
-                    </ul>
+                    <div class="photogallery__review">
+                        <b class="photogallery__name">Лжепётр Мчиславский</b>
+                        <p class="photogallery__text">Где я только не стригся, но так как делаете это вы — не умеет никто
+                            другой! Еще раз спасибо и до скорого!</p>
+                        <ul class="photogallery__srevices">
+                            <li class="photogallery__service service-haircut">Стрижка</li>
+                            <li class="photogallery__service service-shaving">Бритье</li>
+                            <li class="photogallery__service service-mustache">Усы</li>
+                        </ul>
+                    </div>
                 </li>
+                
                 <li class="photogallery__item">
                     <p class="photogallery__photo">
                         <img class="photogallery__photo-image" src="img/sasha-maltsev-photo.jpg"
                             alt="Фото Саши Мальцева">
                     </p>
-                    <b class="photogallery__name">Саша Мальцев</b>
-                    <p class="photogallery__text">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?</p>
-                    <ul class="photogallery__srevices">
-                        <li class="photogallery__service sevice-haircut">Стрижка</li>
-                    </ul>
+
+                    <div class="photogallery__review">
+                        <b class="photogallery__name">Саша Мальцев</b>
+                        <p class="photogallery__text">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?</p>
+                        <ul class="photogallery__srevices">
+                            <li class="photogallery__service service-haircut">Стрижка</li>
+                        </ul>
+                    </div>
+
                 </li>
+                
                 <li class="photogallery__item">
                     <p class="photogallery__photo">
-                        <img class="photogallery__photo-image" src="img/vladimir-ivanych-photo.jog"
+                        <img class="photogallery__photo-image" src="img/vladimir-ivanych-photo.jpg"
                             alt="Фото Владимира Иваныча">
                     </p>
-                    <b class="photogallery__name">Владимир Иваныч</b>
-                    <p class="photogallery__text">К зимнему сезону — готов!</p>
-                    <ul class="photogallery__srevices">
-                        <li class="photogallery__service service-shaving">Борода</li>
-                        <li class="photogallery__service service-mustache">Усы</li>
-                    </ul>
+                    <div class="photogallery__review">
+                        <b class="photogallery__name">Владимир Иваныч</b>
+                        <p class="photogallery__text">К зимнему сезону — готов!</p>
+                        <ul class="photogallery__srevices">
+                            <li class="photogallery__service service-shaving">Борода</li>
+                            <li class="photogallery__service service-mustache">Усы</li>
+                        </ul>
+                    </div>
                 </li>
+               
                 <li class="photogallery__item">
                     <p class="photogallery__photo">
                         <img class="photogallery__photo-image" src="img/winston-blue-photo.jpg"
                             alt="Фото Винстона Синего">
                     </p>
-                    <b class="photogallery__name">Винстон Синий</b>
-                    <p class="photogallery__text">Как только заростаю и волосы начинают мешать видеть — бегом в
-                        Бородинский!</p>
-                    <ul class="photogallery__srevice">
-                        <li class="photogallery__service sevice-haircut">Стрижка</li>
-                    </ul>
+                   <div class="photogallery__review">
+                        <b class="photogallery__name">Винстон Синий</b>
+                        <p class="photogallery__text">Как только заростаю и волосы начинают мешать видеть — бегом в
+                            Бородинский!</p>
+                        <ul class="photogallery__srevices">
+                            <li class="photogallery__service service-haircut">Стрижка</li>
+                        </ul>
+                   </div>
                 </li>
+            
             </ul>
         </section>
 
@@ -141,28 +165,34 @@
     </main>
 
     <footer class="footer-main">
+        <svg version="1.1" width="100%" height="35px" xml:space="preserve" viewBox="0 0 100 35"
+            preserveAspectRatio="none">
+            <polygon fill="#242424" points="0,0 50,35 100,0" />
+        </svg>
         <div class="footer-main__wrapper">
             <div class="footer-main-contacts footer-contacts">
                 <b class="footer-contacts__title">Барбершоп Бородинский</b>
                 <p class="footer-contacts__text"> г. Санкт-Петербург, ул. Большая Конюшенная 19/8
-                    <br>
-                    <a class="contacts__phone" href="tel:+78125556666">
-                        <span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66
-                    </a>
                 </p>
+                <a class="contacts__phone button" href="tel:+78125556666">
+                    <span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66
+                </a>
             </div>
 
             <div class="footer-main__social-networks social">
-                <b class="social-title">Давайте дружить!</b>
+                <b class="social__title">Давайте дружить!</b>
                 <ul class="social__list">
                     <li class="social-item">
-                        <a class="social-link-vk" href="https://vk.com">Мы Вконтакте</a>
+                        <a class="social-link--vk" href="https://vk.com"><span class="visually-hidden">Мы
+                                Вконтакте</span></a>
                     </li>
                     <li class="social-item">
-                        <a class="social-link-facebook" href="https://www.facebook.com">Мы в Фейсбуке</a>
+                        <a class="social-link--facebook" href="https://www.facebook.com"><span
+                                class="visually-hidden">Мы в Фейсбуке</span></a>
                     </li>
                     <li class="social-item">
-                        <a class="social-link-instagram" href="https://www.instagram.com/?hl=ru">Мы в Инстаграме</a>
+                        <a class="social-link--instagram" href="https://www.instagram.com/?hl=ru"><span
+                                class="visually-hidden">Мы в Инстаграме</span></a>
                     </li>
                 </ul>
             </div>
@@ -173,6 +203,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="script/script.js"></script>
+
 </body>
 
 </html>

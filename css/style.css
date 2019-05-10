@@ -19,6 +19,10 @@ body {
   font-weight: normal;
   background-color: #242424;
 }
+.inner-page {
+  color: #000;
+  background-color: #f8f5f2;
+}
 @media (min-width: 768px) {
   body {
     background-color: #353535;
@@ -400,6 +404,7 @@ button:visited {
   display: flex;
   margin: 0 auto;
   flex-direction: column;
+  background-color: #242424;
 }
 .header-main__logo-link {
   text-align: center;
@@ -1194,6 +1199,9 @@ button:visited {
     height: 160px;
     border-radius: 0;
   }
+  .reviews__text {
+    min-height: 52.8px;
+  }
 }
 .footer-main__wrapper {
   width: auto;
@@ -1415,4 +1423,137 @@ button:visited {
     margin-left: auto;
     margin-top: 14px;
   }
+}
+.photogallery {
+  width: 88%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.photogallery__title {
+  margin: 0;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.photogallery__button {
+  display: none;
+}
+.photogallery__list {
+  width: 280px;
+  margin: 0;
+  margin: 0 auto;
+  margin-top: 25px;
+  padding: 0;
+  list-style: none;
+}
+.photogallery__item {
+  margin: 0;
+  margin-top: 20px;
+}
+.photogallery__item:first-child {
+  margin-top: 0;
+}
+.photogallery__item:first-child .photogallery__photo {
+  width: 280px;
+  height: 480px;
+}
+.photogallery__photo {
+  width: 280px;
+  height: 176px;
+  position: relative;
+  margin: 0;
+}
+.photogallery__item:first-child .photogallery__photo-image {
+  width: 280px;
+  height: 480px;
+  object-fit: cover;
+  object-position: right center;
+  margin: 0 auto;
+}
+.photogallery__photo-image {
+  width: 280px;
+  height: 176px;
+  object-fit: cover;
+  object-position: center top;
+}
+.photogallery__work-of-the-month {
+  position: absolute;
+  display: block;
+  width: 176px;
+  height: 50px;
+  top: 400px;
+  background-image: url(../../img/label.png);
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.photogallery__name {
+  font-size: 24px;
+}
+.photogallery__review {
+  padding: 15px 23px 20px 23px;
+  border: 1px solid #e5ddd5;
+  border-top: none;
+}
+.photogallery__text {
+  margin: 0;
+  margin-top: 18px;
+}
+.photogallery__srevices {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-top: 23px;
+  list-style: none;
+}
+.photogallery__service {
+  position: relative;
+  width: 50%;
+  margin-top: 23px;
+  padding-left: 37px;
+  box-sizing: border-box;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.photogallery__service:first-child,
+.photogallery__service:nth-child(2) {
+  margin-top: 0;
+}
+.service-haircut::before,
+.service-shaving::before,
+.service-mustache::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.service-haircut::before {
+  width: 21px;
+  height: 20px;
+  background-image: url(../../img/service-haircut.png);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.service-shaving::before {
+  width: 23px;
+  height: 20px;
+  background-image: url(../../img/service-shaving.png);
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.service-mustache::before {
+  width: 45px;
+  height: 12px;
+  background-image: url(../../img/service-mustache.png);
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
 }
