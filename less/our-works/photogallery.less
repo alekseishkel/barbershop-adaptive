@@ -46,14 +46,11 @@
 }
 
 .photogallery__photo {
-    width: 280px;
-    height: 176px;
     position: relative;
     margin: 0;
 }
 
 .photogallery__item:first-child .photogallery__photo-image {
-    width: 280px;
     height: 480px;
     object-fit: cover;
     object-position: right center;
@@ -157,4 +154,78 @@
     left: -12px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+@media (min-width: @tablet-width) {
+    .photogallery img {
+        max-width: none;
+    }
+
+    .photogallery {
+        width: 84%;
+        max-width: 960px;
+    }
+
+    .photogallery__title {
+        margin-top: 59px;
+        text-align: left;
+    }
+
+    .photogallery__item {
+        display: flex;
+        height: 293px;
+        margin-top: 40px;
+    }
+
+    .photogallery__item:first-child {
+        height: 480px;
+    }
+
+    .photogallery__list {
+        width: 100%;
+    }
+
+    .photogallery__item:first-child .photogallery__photo-image {
+        width: 270px;
+    }
+
+    .photogallery__work-of-the-month {
+        top: 35px;
+    }
+
+    .photogallery__review {
+        width: 100%;
+        padding: 45px 40px 35px 50px;
+        box-sizing: border-box;
+        border-top: 1px solid #e5ddd5;
+        border-left: none;
+    }
+
+    .photogallery__srevices {
+        max-width: 270px;
+        margin-top: 87px;
+    }
+
+    .photogallery__item:first-child .photogallery__srevices {
+        margin-top: 193px;
+    }
+
+    .photogallery__button {
+        display: block;
+        margin-top: 52px;
+    }
+
+    .photogallery__wrapper-top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .photogallery__list {
+        margin-top: 38px;
+    }
+
+    .photogallery__photo-image {
+        width: 270px;
+        height: 293px;
+    }
 }
