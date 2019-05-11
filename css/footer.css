@@ -175,7 +175,7 @@
 @media (min-width: 1200px) {
   .footer-main__wrapper {
     width: 80%;
-    max-width: 1200px;
+    max-width: 960px;
   }
   .footer-main__social-networks {
     order: 2;

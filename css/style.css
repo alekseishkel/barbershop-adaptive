@@ -32,6 +32,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+.news svg {
+  height: 42px;
+}
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
@@ -413,6 +416,12 @@ button:visited {
   width: 226px;
   height: 30px;
 }
+.inner-page .header-main {
+  position: relative;
+}
+.inner-page .bg-cutter {
+  display: none;
+}
 @media (min-width: 768px) {
   .header-main {
     background-color: #000;
@@ -430,6 +439,15 @@ button:visited {
     margin: 0 auto;
     margin-top: 40px;
   }
+  .inner-page .header-main__logo-link {
+    height: 210px;
+  }
+  .inner-page .bg-cutter {
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: 0;
+  }
 }
 @media (min-width: 1200px) {
   .header-main__logo-link {
@@ -439,6 +457,9 @@ button:visited {
   }
   .header-main__logo-link img {
     margin-top: 57px;
+  }
+  .inner-page .header-main__logo-link {
+    height: 305px;
   }
 }
 .stats {
@@ -989,6 +1010,9 @@ button:visited {
   .news__item {
     width: 33%;
   }
+  .news svg {
+    height: 64px;
+  }
 }
 .reviews {
   background-color: #f8f5f2;
@@ -1380,7 +1404,7 @@ button:visited {
 @media (min-width: 1200px) {
   .footer-main__wrapper {
     width: 80%;
-    max-width: 1200px;
+    max-width: 960px;
   }
   .footer-main__social-networks {
     order: 2;
@@ -1445,6 +1469,7 @@ button:visited {
   margin: 0;
   margin: 0 auto;
   margin-top: 25px;
+  margin-bottom: 35px;
   padding: 0;
   list-style: none;
 }
@@ -1559,7 +1584,7 @@ button:visited {
     max-width: none;
   }
   .photogallery {
-    width: 84%;
+    width: 80%;
     max-width: 960px;
   }
   .photogallery__title {
@@ -1611,5 +1636,153 @@ button:visited {
   .photogallery__photo-image {
     width: 270px;
     height: 293px;
+  }
+}
+@media (min-width: 1200px) {
+  .photogallery {
+    width: 80%;
+    max-width: 1200px;
+  }
+}
+.price-list {
+  padding-bottom: 19px;
+  color: #fff;
+  background-color: #353535;
+}
+.price-list polygon {
+  fill: #f8f5f2;
+}
+.price-list__title {
+  margin: 0;
+  margin-top: 38px;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.price-list__number {
+  display: none;
+}
+.price-list__listing {
+  width: 88%;
+  margin: 0 auto;
+  margin-top: 22px;
+}
+.price-list__type {
+  width: 73%;
+  font-size: 20px;
+}
+.price-list__price {
+  vertical-align: top;
+  text-align: right;
+  font-size: 20px;
+}
+.price-list__discount {
+  position: relative;
+  width: 280px;
+  padding: 19px 20px 18px 113px;
+  margin: 0 auto;
+  margin-top: 44px;
+  box-sizing: border-box;
+  font-size: 20px;
+  border: 1px solid #484848;
+}
+.price-list__discount::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 22px;
+  width: 58px;
+  height: 57px;
+  transform: translateY(-50%);
+  background-image: url("../../img/clock.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.price-list__kind {
+  display: none;
+}
+.inner-page .footer-main polygon {
+  fill: #353535;
+}
+.inner-page .footer-main {
+  color: #fff;
+  background-color: #292929;
+}
+@media (min-width: 768px) {
+  .price-list__wrapper {
+    width: 84%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .price-list__title {
+    margin-top: 45px;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: left;
+  }
+  .price-list svg {
+    height: 42px;
+  }
+  .price-list__number {
+    display: table-cell;
+    text-align: center;
+  }
+  .price-list__listing {
+    width: 100%;
+    margin: 0;
+    margin-top: 43px;
+    border-collapse: collapse;
+  }
+  .price-list__listing td {
+    border: 1px solid #4a4a4a;
+    padding: 15px 20px;
+    border-collapse: collapse;
+  }
+  .price-list__type {
+    width: 39.1%;
+  }
+  .price-list__type span {
+    display: none;
+  }
+  .price-list__kind {
+    display: table-cell;
+    width: 25%;
+    font-size: 20px;
+  }
+  .price-list__price {
+    width: 25%;
+    text-align: left;
+  }
+  .price-list__discount {
+    width: 100%;
+    margin-top: 9px;
+    font-size: 30px;
+    line-height: 30px;
+    padding: 43px 50px 39px 184px;
+  }
+  .price-list__discount::before {
+    left: 26px;
+    width: 71px;
+    height: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .price-list__wrapper {
+    width: 80%;
+    max-width: 960px;
+    padding-top: 79px;
+  }
+  .price-list svg {
+    display: none;
+  }
+  .price-list__title {
+    margin: 0;
+  }
+  .price-list__listing {
+    width: 66.66%;
+  }
+  .price-list__listing td {
+    padding: 15px;
   }
 }

@@ -19,6 +19,7 @@
   margin: 0;
   margin: 0 auto;
   margin-top: 25px;
+  margin-bottom: 35px;
   padding: 0;
   list-style: none;
 }
@@ -133,7 +134,7 @@
     max-width: none;
   }
   .photogallery {
-    width: 84%;
+    width: 80%;
     max-width: 960px;
   }
   .photogallery__title {
@@ -185,5 +186,11 @@
   .photogallery__photo-image {
     width: 270px;
     height: 293px;
+  }
+}
+@media (min-width: 1200px) {
+  .photogallery {
+    width: 80%;
+    max-width: 1200px;
   }
 }

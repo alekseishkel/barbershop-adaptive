@@ -19,6 +19,14 @@
     height: 30px;
 }
 
+.inner-page .header-main {
+    position: relative;
+}
+
+.inner-page .bg-cutter {
+    display: none;
+}
+
 @media (min-width: @tablet-width) {
     .header-main {
         background-color: #000;
@@ -38,6 +46,17 @@
         margin: 0 auto;
         margin-top: 40px;
     }
+    
+    .inner-page .header-main__logo-link {
+        height: 210px;
+    }
+
+    .inner-page .bg-cutter {
+        position: absolute;
+        display: block;
+        width: 100%;
+        bottom: 0;
+    }
 }
 
 @media (min-width: @desktop-width) {
@@ -49,6 +68,10 @@
 
     .header-main__logo-link img {
         margin-top: 57px;
+    }
+
+    .inner-page .header-main__logo-link {
+        height: 305px;
     }
 }
 

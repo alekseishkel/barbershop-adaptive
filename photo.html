@@ -11,8 +11,8 @@
 
 <body class="inner-page">
     <header class="header-main">
-        <a class="header-main__logo-link"><img class="header-index__logo-header" width="226" height="30"
-                src="img/logotype-mobile.svg.png" alt="Логотип Барбершопа Бородинский"></a>
+        <a href="index.html" class="header-main__logo-link"><img class="header-index__logo-header" width="226"
+                height="30" src="img/logotype-mobile.svg.png" alt="Логотип Барбершопа Бородинский"></a>
         <nav class="nav-main nav-main--closed nav-main--no-js">
             <button class="nav-main__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
@@ -48,11 +48,15 @@
                     </li>
                 </ul>
             </div>
-
         </nav>
+
+        <img class="bg-cutter" src="img/bg-cutter.png" alt="Обрезка фона">
+
     </header>
 
     <main class="container">
+
+
         <h1 class="visually-hidden">Фотогалерея</h1>
 
         <section class="photogallery">
@@ -61,7 +65,7 @@
                 <a class="photogallery__button button" href="index.html">На главную</a>
             </div>
             <ul class="photogallery__list">
-                
+
                 <li class="photogallery__item">
                     <p class="photogallery__photo">
                         <img class="photogallery__photo-image" src="img/lzhepiotr-photo.jpg"
@@ -70,7 +74,8 @@
                     </p>
                     <div class="photogallery__review">
                         <b class="photogallery__name">Лжепётр Мчиславский</b>
-                        <p class="photogallery__text">Где я только не стригся, но так как делаете это вы — не умеет никто
+                        <p class="photogallery__text">Где я только не стригся, но так как делаете это вы — не умеет
+                            никто
                             другой! Еще раз спасибо и до скорого!</p>
                         <ul class="photogallery__srevices">
                             <li class="photogallery__service service-haircut">Стрижка</li>
@@ -79,7 +84,7 @@
                         </ul>
                     </div>
                 </li>
-                
+
                 <li class="photogallery__item">
                     <p class="photogallery__photo">
                         <img class="photogallery__photo-image" src="img/sasha-maltsev-photo.jpg"
@@ -95,7 +100,7 @@
                     </div>
 
                 </li>
-                
+
                 <li class="photogallery__item">
                     <p class="photogallery__photo">
                         <img class="photogallery__photo-image" src="img/vladimir-ivanych-photo.jpg"
@@ -110,67 +115,89 @@
                         </ul>
                     </div>
                 </li>
-               
+
                 <li class="photogallery__item">
                     <p class="photogallery__photo">
                         <img class="photogallery__photo-image" src="img/winston-blue-photo.jpg"
                             alt="Фото Винстона Синего">
                     </p>
-                   <div class="photogallery__review">
+                    <div class="photogallery__review">
                         <b class="photogallery__name">Винстон Синий</b>
                         <p class="photogallery__text">Как только заростаю и волосы начинают мешать видеть — бегом в
                             Бородинский!</p>
                         <ul class="photogallery__srevices">
                             <li class="photogallery__service service-haircut">Стрижка</li>
                         </ul>
-                   </div>
+                    </div>
                 </li>
-            
+
             </ul>
         </section>
 
         <section class="price-list">
-            <h2 class="price-list__title">Прейскурант</h2>
-            <table class="price-list__listing">
-                <tr>
-                    <td class="price-list__type">Классическая стрижка
-                        (с мытьём головы)</td>
-                    <td class="price-list__price">1 500 руб.</td>
-                </tr>
-                <tr>
-                    <td class="price-list__type">Современный вариант
-                        (с мытьём головы)
-                    </td>
-                    <td class="price-list__price">1 500 руб.</td>
-                </tr>
-                <tr>
-                    <td class="price-list__type">Индивидуальный подход
-                        (с мытьём головы)
-                    </td>
-                    <td class="price-list__price">2 000 руб.</td>
-                </tr>
-                <tr>
-                    <td class="price-list__type">Бритьё головы
-                        (без мытья)
-                    </td>
-                    <td class="price-list__price">500 руб.</td>
-                </tr>
-                <tr>
-                    <td class="price-list__type">Бритьё головы
-                        (с мытьем головы)
-                    </td>
-                    <td class="price-list__price">1 000 руб.</td>
-                </tr>
-            </table>
-            <p class="price-list__discount">C 10:00 до 14:00 скидка 20%</p>
+
+            <svg version="1.1" width="100%" height="35px" xml:space="preserve" viewBox="0 0 100 35"
+                preserveAspectRatio="none">
+                <polygon fill="#242424" points="0,0 50,35 100,0" />
+            </svg>
+
+            <div class="price-list__wrapper">
+                <h2 class="price-list__title">Прейскурант</h2>
+                <table class="price-list__listing">
+                    <tr>
+                        <td class="price-list__number">1</td>
+                        <td class="price-list__type"><b>Классическая стрижка</b><br>
+                            <span>(с мытьём головы)</span>
+                        </td>
+                        <td class="price-list__kind">с мытьём головы
+                        </td>
+                        <td class="price-list__price">1 500 руб.</td>
+                    </tr>
+                    <tr>
+                        <td class="price-list__number">2</td>
+                        <td class="price-list__type"><b>Современный вариант</b><br>
+                            <span>(с мытьём головы)</span>
+                        </td>
+                        <td class="price-list__kind">с мытьём головы</td>
+                        <td class="price-list__price">1 500 руб.</td>
+                    </tr>
+                    <tr>
+                        <td class="price-list__number">3</td>
+                        <td class="price-list__type"><b>Индивидуальный подход</b><br>
+                            <span>(с мытьём головы)</span>
+                        </td>
+                        <td class="price-list__kind">с мытьём головы</td>
+                        <td class="price-list__price">2 000 руб.</td>
+                    </tr>
+                    <tr>
+                        <td class="price-list__number">4</td>
+                        <td class="price-list__type"><b>Бритьё головы</b><br>
+                            <span>(без мытья)</span>
+                        </td>
+                        <td class="price-list__kind">без мытья</td>
+                        <td class="price-list__price">500 руб.</td>
+                    </tr>
+                    <tr>
+                        <td class="price-list__number">5</td>
+                        <td class="price-list__type"><b>Бритьё головы</b><br>
+                            <span>(с мытьем головы)</span>
+                        </td>
+                        <td class="price-list__kind">с мытьём головы</td>
+                        <td class="price-list__price">1 000 руб.</td>
+                    </tr>
+                </table>
+                <p class="price-list__discount">C 10:00 до 14:00 скидка 20%</p>
+            </div>
         </section>
     </main>
 
     <footer class="footer-main">
+
         <svg version="1.1" width="100%" height="35px" xml:space="preserve" viewBox="0 0 100 35"
             preserveAspectRatio="none">
             <polygon fill="#242424" points="0,0 50,35 100,0" />
         </svg>
+
         <div class="footer-main__wrapper">
             <div class="footer-main-contacts footer-contacts">
                 <b class="footer-contacts__title">Барбершоп Бородинский</b>

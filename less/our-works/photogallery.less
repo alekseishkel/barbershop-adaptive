@@ -27,6 +27,7 @@
     margin: 0;
     margin: 0 auto;
     margin-top: 25px;
+    margin-bottom: 35px;
     padding: 0;
     list-style: none;
 }
@@ -162,7 +163,7 @@
     }
 
     .photogallery {
-        width: 84%;
+        width: 80%;
         max-width: 960px;
     }
 
@@ -227,5 +228,12 @@
     .photogallery__photo-image {
         width: 270px;
         height: 293px;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .photogallery {
+        width: 80%;
+        max-width: 1200px;
     }
 }
