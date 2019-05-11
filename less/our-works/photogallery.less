@@ -234,6 +234,89 @@
 @media (min-width: @desktop-width) {
     .photogallery {
         width: 80%;
-        max-width: 1200px;
+        max-width: 960px;
+    }
+
+    .photogallery__item:first-child .photogallery__photo-image {
+        width: 480px;
+        height: 480px;
+    }
+
+    .photogallery__work-of-the-month {
+        background-image: url(../../img/label-desktop.png);
+        top: 25px;
+        right: -480px;
+    }
+
+    .photogallery__photo-image {
+        width: 294px;
+    }
+
+    .photogallery__item:first-child .photogallery__photo {
+        width: 480px;
+    }
+
+    .photogallery__photo {
+        width: 294px;
+        height: 294px;
+    }
+
+    .photogallery__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        padding-bottom: 88px;
+    }
+
+    .photogallery__item:first-child {
+        display: flex;
+        width: 100%;
+        min-height: 0px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .photogallery__item {
+        display: block;
+        width: 30.6%;
+        min-height: 540px;
+        margin-top: 41px;
+    }
+
+    .photogallery__title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .photogallery__item:first-child .photogallery__srevices {
+        max-width: none;
+    }
+
+    .photogallery__srevices {
+        margin-top: auto;
+    }
+
+    .photogallery__item:first-child .photogallery__service {
+        width: auto;
+        margin-top: 0;
+        margin-right: 37px;
+    }
+
+    .photogallery__item:first-child  .photogallery__review {
+        padding-top: 129px;
+    }
+
+    .photogallery__review {
+        display: flex;
+        flex-direction: column;
+        padding: 22px 30px 35px 35px;
+        min-height: 248px;
+        border-top: none;
+        border-left: 1px solid #e5ddd5;
+    }
+
+    .photogallery__text {
+        margin-top: 29px;
     }
 }
