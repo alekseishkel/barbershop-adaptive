@@ -94,6 +94,10 @@
     margin-top: 18px;
 }
 
+.photogallery__item:not(:first-child) .photogallery__text:not(:first-child) {
+    min-height: 80px;
+}
+
 .photogallery__srevices {
     display: flex;
     flex-wrap: wrap;
@@ -174,7 +178,6 @@
 
     .photogallery__item {
         display: flex;
-        height: 293px;
         margin-top: 40px;
     }
 
@@ -293,8 +296,13 @@
         max-width: none;
     }
 
+    .photogallery__item:first-child .photogallery__srevices {
+        padding-top: 0;
+    }
+
     .photogallery__srevices {
         margin-top: auto;
+        padding-top: 58px;
     }
 
     .photogallery__item:first-child .photogallery__service {
@@ -305,6 +313,8 @@
 
     .photogallery__item:first-child  .photogallery__review {
         padding-top: 129px;
+        border-top: 1px solid #e5ddd5;
+        border-left: none;
     }
 
     .photogallery__review {
