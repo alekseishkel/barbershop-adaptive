@@ -56,45 +56,47 @@
     <main class="container">
         <h1 class="visually-hidden">Записаться на стрижку</h1>
         <section class="recording">
-            <h2 class="recording__form-title">Запись на стрижку</h2>
-
+            <h2 class="visually-hidden">Формы записи на стрижку</h2>
             <form class="recording__form" action="https://echo.htmlacademy.ru" method="GET">
                 <fieldset class="recording__form-details contact-details">
-                    <legend class="visually-hidden">Контактные данные</legend>
-                    <input class="contact-details__recording-field recording-field-surname" type="" name="surname" placeholder="Фамилия">
-                    <br>
-                    <input class="contact-details__recording-field recording__field recording__field--name" type="text" name="name" placeholder="Имя">
-                    <br>
-                    <input class="contact-details__recording-field recording__field--patronymic" type="text" name="patronymic" placeholder="Отчество">
-                    <br>
-                    <input class="contact-details__recording-field recording__field--tel" type="tel" name="tel" placeholder="Контактный телефон">
-                    <br>
-                    <input class="contact-details__recording-field recording__field--email" type="email" name="email" placeholder="Контактный e-mail">
-                    <br>
-                    <textarea class="contact-details__recording-field recording__field--extra-info" name="extra-info" id="extra-infp-id" placeholder="Доп. информация для мастера"></textarea>
-                    <br>
+                    <div class="contact-details__wrapper">
+                        <legend class="recording__form-title">Запись на стрижку</legend>
+                        <a class="recording__button button" href="index.html">На главную</a>
+                        <input class="contact-details__recording-field recording-field-surname" type="" name="surname" placeholder="Фамилия">
+                        <br>
+                        <input class="contact-details__recording-field recording__field recording__field--name" type="text" name="name" placeholder="Имя">
+                        <br>
+                        <input class="contact-details__recording-field recording__field--patronymic" type="text" name="patronymic" placeholder="Отчество">
+                        <br>
+                        <input class="contact-details__recording-field recording__field--tel" type="tel" name="tel" placeholder="Контактный телефон">
+                        <br>
+                        <input class="contact-details__recording-field recording__field--email" type="email" name="email" placeholder="Контактный e-mail">
+                        <br>
+                        <textarea class="contact-details__recording-field recording__field--extra-info" name="extra-info" id="extra-infp-id" placeholder="Доп. информация для мастера"></textarea>
+                        <br>
+                    </div>
                 </fieldset>
 
                 <fieldset class="beard-model">
-                    <legend>Выберите модель бороды:</legend>
-                    <ul>
-                        <li class="beard-model-item">
-                            <input class="recoding__radio visually-hidden" type="radio" id="admiral-radio-radio" name="beard-model" value="admiral">
+                    <legend class="beard-model__title">Выберите модель бороды:</legend>
+                    <ul class="beard-model__list beard-model">
+                        <li class="beard-model__item beard-model--admiral">
+                            <input class="recoding__radio visually-hidden" type="radio" id="admiral-radio-radio" name="beard-model" value="admiral" checked>
                             <label for="admiral-radio-radio">адмирал</label>
                         </li>
-                        <li class="beard-model-item">
+                        <li class="beard-model__item beard-model--lumberjack">
                             <input class="recoding__radio visually-hidden" type="radio" id="lumberjack-radio-radio" name="beard-model" value="lumberjack">
                             <label for="lumberjack-radio-radio">лесоруб</label>
                         </li>
-                        <li class="beard-model-item">
+                        <li class="beard-model__item beard-model--polar-explorer">
                             <input class="recoding__radio visually-hidden" type="radio" id="polar-explorer-radio-radio" name="beard-model" value="polar-explorer">
                             <label for="polar-explorer-radio-radio">полярник</label>
                         </li>
-                        <li class="beard-model-item">
+                        <li class="beard-model__item beard-model--boyar">
                             <input class="recoding__radio visually-hidden" type="radio" id="boyar-radio-radio" name="beard-model" value="boyar">
                             <label for="boyar-radio-radio">боярин</label>
                         </li>
-                        <li class="beard-model-item">
+                        <li class="beard-model__item beard-model--sage">
                             <input class="recoding__radio visually-hidden" type="radio" id="sage-radio-radio" name="beard-model" value="sage">
                             <label for="sage-radio-radio">мудрец</label>
                         </li>
@@ -136,38 +138,46 @@
     </main>
 
     <footer class="footer-main">
-            <div class="footer-main__wrapper">
-                <div class="footer-main-contacts footer-contacts">
-                    <b class="footer-contacts__title">Барбершоп Бородинский</b>
-                    <p class="footer-contacts__text"> г. Санкт-Петербург, ул. Большая Конюшенная 19/8
-                        <br>
-                        <a class="contacts__phone" href="tel:+78125556666">
-                            <span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66
-                        </a>
-                    </p>
-                </div>
-    
-                <div class="footer-main__social-networks social">
-                    <b class="social-title">Давайте дружить!</b>
-                    <ul class="social__list">
-                        <li class="social-item">
-                            <a class="social-link-vk" href="https://vk.com">Мы Вконтакте</a>
-                        </li>
-                        <li class="social-item">
-                            <a class="social-link-facebook" href="https://www.facebook.com">Мы в Фейсбуке</a>
-                        </li>
-                        <li class="social-item">
-                            <a class="social-link-instagram" href="https://www.instagram.com/?hl=ru">Мы в Инстаграме</a>
-                        </li>
-                    </ul>
-                </div>
-    
-                <div class="footer-main__copyright copyright">
-                    <b class="copyright__title">Разработано:</b>
-                    <a class="button copyright__link" href="https://htmlacademy.ru">HTML ACADEMY</a>
-                </div>
+
+        <svg version="1.1" width="100%" height="35px" xml:space="preserve" viewBox="0 0 100 35"
+            preserveAspectRatio="none">
+            <polygon fill="#242424" points="0,0 50,35 100,0" />
+        </svg>
+
+        <div class="footer-main__wrapper">
+            <div class="footer-main-contacts footer-contacts">
+                <b class="footer-contacts__title">Барбершоп Бородинский</b>
+                <p class="footer-contacts__text"> г. Санкт-Петербург, ул. Большая Конюшенная 19/8
+                </p>
+                <a class="contacts__phone button" href="tel:+78125556666">
+                    <span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66
+                </a>
             </div>
-        </footer>
+
+            <div class="footer-main__social-networks social">
+                <b class="social__title">Давайте дружить!</b>
+                <ul class="social__list">
+                    <li class="social-item">
+                        <a class="social-link--vk" href="https://vk.com"><span class="visually-hidden">Мы
+                                Вконтакте</span></a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link--facebook" href="https://www.facebook.com"><span
+                                class="visually-hidden">Мы в Фейсбуке</span></a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-link--instagram" href="https://www.instagram.com/?hl=ru"><span
+                                class="visually-hidden">Мы в Инстаграме</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-main__copyright copyright">
+                <b class="copyright__title">Разработано:</b>
+                <a class="button copyright__link" href="https://htmlacademy.ru">HTML ACADEMY</a>
+            </div>
+        </div>
+    </footer>
 
         <script src="script/script.js"></script>
 

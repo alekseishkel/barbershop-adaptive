@@ -1,0 +1,68 @@
+.beard-model {
+  margin: 0;
+  margin-top: 35px;
+  padding: 0;
+  border: none;
+}
+.beard-model__title {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.beard-model__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 9px;
+  padding: 0;
+  list-style: none;
+}
+.beard-model__item {
+  width: 33.33%;
+  position: relative;
+  margin-top: 29px;
+  box-sizing: border-box;
+  line-height: 24px;
+  text-align: center;
+}
+.recoding__radio + label {
+  position: relative;
+  display: block;
+  padding-top: 65px;
+  padding-bottom: 117px;
+  cursor: pointer;
+}
+.recoding__radio + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #e5ddd5;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.recoding__radio:checked + label::before {
+  top: 16px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #e5ddd5;
+  box-shadow: 0 0 0 15px #fff, 0 0 0 16px #e5ddd5;
+}
+.beard-model__item label::after {
+  content: "";
+  position: absolute;
+  top: 99px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.beard-model--admiral label::after {
+  width: 52px;
+  height: 49px;
+  background-image: url(../../img/beard-admiral.png);
+  background-repeat: no-repeat;
+}

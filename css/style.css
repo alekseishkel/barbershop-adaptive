@@ -35,7 +35,7 @@ img {
 .news svg {
   height: 42px;
 }
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1892,15 +1892,20 @@ button:visited {
   margin: 0 auto;
 }
 .recording__form-title {
+  display: block;
   margin: 0;
-  margin-top: 30px;
+  margin-bottom: 26px;
   font-size: 30px;
   line-height: 30px;
+  font-weight: bold;
   text-transform: uppercase;
   text-align: center;
 }
+.recording__button {
+  display: none;
+}
 .recording__form-details {
-  margin-top: 26px;
+  margin-top: 30px;
   padding: 0;
   border: none;
 }
@@ -1913,6 +1918,9 @@ button:visited {
   font-size: 18px;
   border: 1px solid #e5ddd5;
 }
+.recording-field-surname {
+  margin-top: 0;
+}
 .contact-details__recording-field:hover,
 .contact-details__recording-field:focus {
   border: 1px solid #d5c9bd;
@@ -1923,7 +1931,7 @@ button:visited {
 .contact-details__recording-field::placeholder {
   color: #000;
 }
-.contact-details__recording-field.recording__field--patronymic {
+.recording__field--patronymic {
   margin-top: 32px;
 }
 .recording__field--extra-info {
@@ -1935,10 +1943,141 @@ button:visited {
 @media (min-width: 768px) {
   .recording {
     width: 84%;
-    max-width: 960px;
+  }
+  .contact-details {
+    margin-top: 54px;
+  }
+  .contact-details__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   .recording__form-title {
-    margin-top: 59px;
+    width: 52%;
+    margin-top: 5px;
+    margin-bottom: 69px;
+    font-size: 40px;
+    line-height: 40px;
     text-align: left;
   }
+  .recording__button {
+    display: block;
+  }
+  .contact-details__recording-field {
+    flex-grow: 1;
+    flex-shrink: 0;
+    height: 70px;
+    margin-top: 35px;
+    padding: 0 25px;
+  }
+  .contact-details__recording-field:nth-child(3),
+  .contact-details__recording-field:nth-child(5),
+  .contact-details__recording-field:nth-child(7) {
+    width: 33.33%;
+    margin-top: 0;
+  }
+  .contact-details__recording-field:nth-child(5),
+  .contact-details__recording-field:nth-child(7) {
+    border-left: none;
+  }
+  .recording__field--extra-info {
+    height: 211px;
+    padding: 22px 25px;
+  }
+}
+@media (min-width: 1200px) {
+  .recording {
+    width: 80%;
+    max-width: 960px;
+  }
+  .contact-details__recording-field:nth-child(3),
+  .contact-details__recording-field:nth-child(5),
+  .contact-details__recording-field:nth-child(7) {
+    width: 30.7%;
+    margin-top: 0;
+    margin-right: 37px;
+  }
+  .contact-details__recording-field:nth-child(7) {
+    margin-right: 0;
+  }
+  .contact-details__recording-field:nth-child(5),
+  .contact-details__recording-field:nth-child(7) {
+    border-left: 1px solid #e5ddd5;
+  }
+  .contact-details__recording-field:nth-child(9),
+  .contact-details__recording-field:nth-child(11) {
+    width: 48.1%;
+    margin-right: 35px;
+  }
+  .contact-details__recording-field:nth-child(11) {
+    margin-right: 0;
+  }
+}
+.beard-model {
+  margin: 0;
+  margin-top: 35px;
+  padding: 0;
+  border: none;
+}
+.beard-model__title {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.beard-model__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 9px;
+  padding: 0;
+  list-style: none;
+}
+.beard-model__item {
+  width: 33.33%;
+  position: relative;
+  margin-top: 29px;
+  box-sizing: border-box;
+  line-height: 24px;
+  text-align: center;
+}
+.recoding__radio + label {
+  position: relative;
+  display: block;
+  padding-top: 65px;
+  padding-bottom: 117px;
+  cursor: pointer;
+}
+.recoding__radio + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #e5ddd5;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.recoding__radio:checked + label::before {
+  top: 16px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #e5ddd5;
+  box-shadow: 0 0 0 15px #fff, 0 0 0 16px #e5ddd5;
+}
+.beard-model__item label::after {
+  content: "";
+  position: absolute;
+  top: 99px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.beard-model--admiral label::after {
+  width: 52px;
+  height: 49px;
+  background-image: url(../../img/beard-admiral.png);
+  background-repeat: no-repeat;
 }
