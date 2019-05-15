@@ -1,0 +1,156 @@
+.add-services {
+  margin: 0;
+  margin-top: 47px;
+  padding: 0;
+  border: none;
+}
+.add-services__title {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.extra-services__list {
+  margin: 0;
+  margin-top: 45px;
+  margin-bottom: 4px;
+  padding: 0;
+  list-style: none;
+}
+.extra-services__item {
+  position: relative;
+  margin-top: 35px;
+  padding-left: 60px;
+  line-height: 30px;
+}
+.extra-services__item:first-child {
+  margin-top: 0;
+}
+.recording__checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  background-color: #fff;
+  border: 1px solid #e5ddd5;
+  box-sizing: border-box;
+}
+.recording__checkbox:hover + label::before {
+  border: 1px solid #d5c9bd;
+}
+.recording__checkbox:focus + label::before {
+  border: 1px solid #d5c9bd;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+.recording__checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 22px;
+  height: 16px;
+  background-image: url(../../img/checkbox.png);
+  background-repeat: no-repeat;
+}
+.recording__button--submit {
+  width: 100%;
+  margin-top: 55px;
+  margin-bottom: 39px;
+  color: #fff;
+  background-color: #826550;
+  line-height: 24px;
+}
+.inner-page .form-footer__svg polygon {
+  fill: #f8f5f2;
+}
+@media (min-width: 768px) {
+  .add-services {
+    margin-top: 58px;
+  }
+  .add-services__title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .add-services__title::before,
+  .add-services__title::after {
+    content: "";
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 100px;
+    height: 1px;
+    background-color: #e5ddd5;
+  }
+  .add-services__title::before {
+    margin-right: 25px;
+  }
+  .add-services__title::after {
+    margin-left: 25px;
+  }
+  .extra-services__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 71px;
+  }
+  .extra-services__item {
+    width: 50%;
+    margin-top: 55px;
+    box-sizing: border-box;
+  }
+  .extra-services__item:nth-child(2) {
+    margin-top: 0px;
+  }
+  .recording__button--submit {
+    height: 70px;
+    margin-top: 63px;
+    margin-bottom: 75px;
+    color: #fff;
+    background-color: #826550;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .extra-services__list {
+    margin-top: 65px;
+  }
+  .extra-services__item {
+    width: 33.33%;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+  .extra-services__item:nth-child(2) {
+    margin-top: 55px;
+  }
+  .extra-services__item:nth-child(3) {
+    margin-top: 0px;
+  }
+  .extra-services__item:nth-child(5) {
+    margin-top: 0px;
+  }
+  .recording__checkbox--beard-color {
+    order: 1;
+  }
+  .recording__checkbox--mustache-twist {
+    order: 4;
+  }
+  .recording__checkbox--beard-comb {
+    order: 2;
+  }
+  .recording__checkbox--hair-level-off {
+    order: 5;
+  }
+  .recording__checkbox--gray-remove {
+    order: 3;
+  }
+  .recording__checkbox--bald-polish {
+    order: 6;
+  }
+  .recording__button--submit {
+    margin-top: 84px;
+    margin-bottom: 87px;
+  }
+}

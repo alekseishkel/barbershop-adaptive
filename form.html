@@ -79,7 +79,7 @@
 
                 <fieldset class="beard-model">
                     <legend class="beard-model__title">Выберите модель бороды:</legend>
-                    <ul class="beard-model__list beard-model">
+                    <ul class="beard-model__list beard-model-ul">
                         <li class="beard-model__item beard-model--admiral">
                             <input class="recoding__radio visually-hidden" type="radio" id="admiral-radio-radio" name="beard-model" value="admiral" checked>
                             <label for="admiral-radio-radio">адмирал</label>
@@ -104,42 +104,42 @@
                 </fieldset>
 
                 <fieldset class="add-services">
-                    <legend>Дополнительные услуги:</legend>
-                    <ul>
-                        <li class="extra-services-item">
-                                <input class="recording__checkbox visually-hidden" type="checkbox" id="beard-color-checkbox" name="beard-color" checked>
+                    <legend class="add-services__title">Дополнительные услуги:</legend>
+                    <ul class="extra-services__list">
+                        <li class="extra-services__item recording__checkbox--beard-color">
+                                <input class="recording__checkbox  visually-hidden" type="checkbox" id="beard-color-checkbox" name="beard-color" checked>
                                 <label for="beard-color-checkbox">Подкрасить бороду</label>
                         </li>
-                        <li class="extra-services-item">
-                                <input class="recording__checkbox visually-hidden" type="checkbox" id="mustache-twist-checkbox" name="mustache-twist" checked>
+                        <li class="extra-services__item recording__checkbox--mustache-twist">
+                                <input class="recording__checkbox  visually-hidden" type="checkbox" id="mustache-twist-checkbox" name="mustache-twist" checked>
                                 <label for="mustache-twist-checkbox">Накрутить усы</label>
                         </li>
-                        <li class="extra-services-item">
+                        <li class="extra-services__item recording__checkbox--beard-comb">
                                 <input class="recording__checkbox visually-hidden" type="checkbox" id="beard-comb-checkbox" name="beard-comb">
                                 <label for="beard-comb-checkbox">Причесать бороду</label>
                         </li>
-                        <li class="extra-services-item">
+                        <li class="extra-services__item recording__checkbox--hair-level-off">
                                 <input class="recording__checkbox visually-hidden" type="checkbox" id="hair-level-off-checkbox" name="hair-level-off">
                                 <label for="hair-level-off-checkbox">Подровнять виски</label>
                         </li>
-                        <li class="extra-services-item">
+                        <li class="extra-services__item recording__checkbox--gray-remove">
                                 <input class="recording__checkbox visually-hidden" type="checkbox" id="gray-remove-checkbox" name="gray-remove">
                                 <label for="gray-remove-checkbox">Убрать седину</label>
                         </li>
-                        <li class="extra-services-item">
-                                <input class="recording__checkbox visually-hidden" type="checkbox" id="bald-polish-checkbox" name="bald-polish">
+                        <li class="extra-services__item recording__checkbox--bald-polish">
+                                <input class="recording__checkbox  visually-hidden" type="checkbox" id="bald-polish-checkbox" name="bald-polish">
                                 <label for="bald-polish-checkbox">Отполировать лысину</label>
                         </li>
                     </ul>
                 </fieldset>
-                <button class="recording__button button" type="submit">Отправить заявку</button>
+                <button class="recording__button--submit button" type="submit">Отправить заявку</button>
             </form>
         </section>
     </main>
 
     <footer class="footer-main">
 
-        <svg version="1.1" width="100%" height="35px" xml:space="preserve" viewBox="0 0 100 35"
+        <svg class="form-footer__svg" version="1.1" width="100%" height="35px" xml:space="preserve" viewBox="0 0 100 35"
             preserveAspectRatio="none">
             <polygon fill="#242424" points="0,0 50,35 100,0" />
         </svg>
