@@ -43,6 +43,9 @@
   border: 1px solid #d5c9bd;
   outline: 5px auto -webkit-focus-ring-color;
 }
+.recording__checkbox:active + label::before {
+  background-color: #d5c9bd;
+}
 .recording__checkbox:checked + label::after {
   content: "";
   position: absolute;
@@ -60,6 +63,9 @@
   color: #fff;
   background-color: #826550;
   line-height: 24px;
+}
+.recording__button--submit:hover {
+  background-color: #6a4d38;
 }
 .inner-page .form-footer__svg polygon {
   fill: #f8f5f2;
@@ -114,6 +120,12 @@
   }
 }
 @media (min-width: 1200px) {
+  .add-services__title::before {
+    margin-right: 40px;
+  }
+  .add-services__title::after {
+    margin-left: 40px;
+  }
   .extra-services__list {
     margin-top: 65px;
   }

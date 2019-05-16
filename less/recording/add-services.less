@@ -45,6 +45,7 @@
     background-color: #fff;
     border: 1px solid #e5ddd5;
     box-sizing: border-box;
+    
 }
 
 .recording__checkbox:hover + label::before {
@@ -54,7 +55,10 @@
 .recording__checkbox:focus + label::before {
     border: 1px solid #d5c9bd;
     outline: 5px auto -webkit-focus-ring-color;
+}
 
+.recording__checkbox:active + label::before {
+    background-color: #d5c9bd;
 }
 
 .recording__checkbox:checked + label::after {
@@ -75,6 +79,10 @@
     color: #fff;
     background-color: #826550;
     line-height: 24px;
+}
+
+.recording__button--submit:hover {
+    background-color: #6a4d38;
 }
 
 .inner-page .form-footer__svg polygon {
@@ -140,6 +148,14 @@
 }
 
 @media (min-width: @desktop-width) {
+    .add-services__title::before {
+            margin-right: 40px;
+        }
+
+    .add-services__title::after {
+            margin-left: 40px;
+        }
+
     .extra-services__list {
         margin-top: 65px;
     }

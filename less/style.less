@@ -35,6 +35,10 @@ body {
     background-color: #f8f5f2;
 }
 
+svg {
+    margin-top: -1px;
+}
+
 @media (min-width: @tablet-width) {
     body {
         background-color: #353535;
@@ -99,6 +103,25 @@ button:visited {
     border: 1px solid #d5c9bd;
 }
 
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-2000px);
+    }
+
+    50% {
+        transform: translateY(30px);
+    }
+
+    90% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
 @import "nav-main.less";
 @import "header-main.less";
 @import "stats.less";
@@ -111,3 +134,4 @@ button:visited {
 @import "recording/recording.less";
 @import "recording//beard-model.less";
 @import "recording/add-services.less";
+@import "personal-account.less";
