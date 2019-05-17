@@ -44,6 +44,12 @@
     bottom: 0;
   }
 }
+@media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+  .header-main__logo-link {
+    background-image: url(../img/background-tablet.jpg@2x.jpg);
+    background-size: 1200px auto;
+  }
+}
 @media (min-width: 1200px) {
   .header-main__logo-link {
     height: 648px;

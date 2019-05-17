@@ -2,6 +2,8 @@
 
 @tablet-width: 768px;
 @desktop-width: 1200px;
+@retina-dpi: 144dpi;
+@retina-dppx: 1.5dppx;
 
 .header-main {
     display: flex;
@@ -38,6 +40,11 @@
         height: 400px;
         background: url('../img/background-tablet.jpg') center -9px no-repeat;
         padding: 0;
+
+        @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+            background-image: url(../img/background-tablet.jpg@2x.jpg);
+            background-size: 1200px auto;
+        }
     }
 
     .header-main__logo-link img {
