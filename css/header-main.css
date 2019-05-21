@@ -7,9 +7,10 @@
 .header-main__logo-link {
   text-align: center;
 }
-.header-main__logo-header img {
+.header-main__logo-link img {
   width: 226px;
   height: 30px;
+  margin-top: 0;
 }
 .inner-page .header-main {
   position: relative;

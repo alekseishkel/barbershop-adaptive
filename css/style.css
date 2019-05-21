@@ -169,6 +169,9 @@ button:visited {
   margin: 0 auto;
   padding: 29px 0 26px 0;
 }
+.user-list__login-icon {
+  fill: #fff;
+}
 .nav-main--closed .nav-main__toggle {
   position: absolute;
   top: 0;
@@ -260,7 +263,7 @@ button:visited {
   height: 16px;
   opacity: 0.3;
 }
-.user-list__login-icon polygon {
+.user-list__login:hover .user-list__login-icon {
   fill: #fff;
 }
 @media (min-width: 768px) {
@@ -419,6 +422,9 @@ button:visited {
   .user-list__login-icon {
     left: 15px;
   }
+  .user-list__login:hover .user-list__login-icon {
+    fill: #000;
+  }
 }
 .header-main {
   display: flex;
@@ -429,9 +435,10 @@ button:visited {
 .header-main__logo-link {
   text-align: center;
 }
-.header-main__logo-header img {
+.header-main__logo-link img {
   width: 226px;
   height: 30px;
+  margin-top: 0;
 }
 .inner-page .header-main {
   position: relative;

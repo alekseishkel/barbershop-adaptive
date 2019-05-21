@@ -84,6 +84,10 @@
     padding: 29px 0 26px 0;
 }
 
+.user-list__login-icon {
+        fill: #fff;
+}
+
 .nav-main--closed .nav-main__toggle {
     position: absolute;
     top: 0;
@@ -187,10 +191,10 @@
     width: 16px;
     height: 16px;
     opacity: 0.3;
+}
 
-    polygon {
-        fill: #fff;
-    }
+.user-list__login:hover .user-list__login-icon {
+    fill: #fff;
 }
 
 @media (min-width: @tablet-width) {
@@ -385,5 +389,9 @@
 
     .user-list__login-icon {
         left: 15px;
+    }
+
+    .user-list__login:hover .user-list__login-icon {
+        fill: #000;
     }
 }

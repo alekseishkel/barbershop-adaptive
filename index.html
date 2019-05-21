@@ -13,10 +13,9 @@
     <header class="header-main">
         <a class="header-main__logo-link">
             <picture>
-                <source media="(min-width: 1200px)" srcset="img/logotype-desktop.png">
-                <source media="(min-width: 768px)" srcset="img/logotype-tablet.png">
-                <img class="header-index__logo-header" width="226" height="30" src="img/logotype-mobile.svg.png"
-                    alt="Логотип Барбершопа Бородинский">
+                <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img src="img/logo-mobile.svg" width="226" height="30" alt="Логотип Барбершопа Бородинский">
             </picture>
         </a>
         <nav class="nav-main nav-main--closed nav-main--no-js">
@@ -44,10 +43,8 @@
                 <ul class="nav-main__list user-list">
                     <li class="user-list__item">
                         <a class="user-list__login" href="login.html">
-                            <svg class="user-list__login-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
-                                <polygon points="0,7 7,7 7,4.1 11,8 7,11.9 7,9.1 0,9 " />
-                                <polygon points="7,0 7,2 14,2 14,14 7,14 7,16 16,16 16,0 " />
+                            <svg class="user-list__login-icon" width="16" height="16">
+                                <use xlink:href="img/sprite.svg#icon-login"></use>
                             </svg>
                             Войти
                         </a>
