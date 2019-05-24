@@ -1,0 +1,280 @@
+.photogallery {
+  width: 88%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.photogallery__title {
+  margin: 0;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.photogallery__button {
+  display: none;
+}
+.photogallery__list {
+  width: 280px;
+  margin: 0;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 35px;
+  padding: 0;
+  list-style: none;
+}
+.photogallery__item {
+  margin: 0;
+  margin-top: 20px;
+}
+.photogallery__item:first-child {
+  margin-top: 0;
+}
+.photogallery__item:first-child .photogallery__photo {
+  width: 280px;
+  height: 480px;
+}
+.photogallery__photo {
+  position: relative;
+  margin: 0;
+}
+.photogallery__item:first-child .photogallery__photo-image {
+  height: 480px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right center;
+     object-position: right center;
+  margin: 0 auto;
+}
+.photogallery__photo-image {
+  width: 280px;
+  height: 176px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
+}
+.photogallery__work-of-the-month {
+  position: absolute;
+  display: block;
+  width: 176px;
+  height: 50px;
+  top: 400px;
+  background-image: url(../../img/label.png);
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.photogallery__name {
+  font-size: 24px;
+}
+.photogallery__review {
+  padding: 15px 23px 20px 23px;
+  border: 1px solid #e5ddd5;
+  border-top: none;
+}
+.photogallery__text {
+  margin: 0;
+  margin-top: 18px;
+}
+.photogallery__item:not(:first-child) .photogallery__text:not(:first-child) {
+  min-height: 80px;
+}
+.photogallery__srevices {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-top: 23px;
+  list-style: none;
+}
+.photogallery__service {
+  position: relative;
+  width: 50%;
+  margin-top: 23px;
+  padding-left: 37px;
+  box-sizing: border-box;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.photogallery__service:first-child,
+.photogallery__service:nth-child(2) {
+  margin-top: 0;
+}
+.service-haircut::before,
+.service-shaving::before,
+.service-mustache::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.service-haircut::before {
+  width: 21px;
+  height: 20px;
+  background-image: url(../img/service-haircut.png);
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.service-shaving::before {
+  width: 23px;
+  height: 20px;
+  background-image: url(../img/service-shaving.png);
+  left: 0px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.service-mustache::before {
+  width: 45px;
+  height: 12px;
+  background-image: url(../img/service-mustache.png);
+  left: -12px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+  .photogallery img {
+    max-width: none;
+  }
+  .photogallery {
+    width: 80%;
+    max-width: 960px;
+  }
+  .photogallery__title {
+    margin-top: 59px;
+    text-align: left;
+  }
+  .photogallery__item {
+    display: flex;
+    margin-top: 40px;
+  }
+  .photogallery__item:first-child {
+    height: 480px;
+  }
+  .photogallery__list {
+    width: 100%;
+  }
+  .photogallery__item:first-child .photogallery__photo-image {
+    width: 270px;
+  }
+  .photogallery__work-of-the-month {
+    top: 35px;
+  }
+  .photogallery__review {
+    width: 100%;
+    padding: 45px 40px 35px 50px;
+    box-sizing: border-box;
+    border-top: 1px solid #e5ddd5;
+    border-left: none;
+  }
+  .photogallery__srevices {
+    max-width: 270px;
+    margin-top: 87px;
+  }
+  .photogallery__item:first-child .photogallery__srevices {
+    margin-top: 193px;
+  }
+  .photogallery__button {
+    display: block;
+    margin-top: 52px;
+  }
+  .photogallery__wrapper-top {
+    display: flex;
+    justify-content: space-between;
+  }
+  .photogallery__list {
+    margin-top: 38px;
+  }
+  .photogallery__photo-image {
+    width: 270px;
+    height: 293px;
+  }
+}
+@media (min-width: 1200px) {
+  .photogallery {
+    width: 80%;
+    max-width: 960px;
+  }
+  .photogallery__item:first-child .photogallery__photo-image {
+    width: 480px;
+    height: 480px;
+  }
+  .photogallery__work-of-the-month {
+    background-image: url(../img/label-desktop.png);
+    top: 25px;
+    right: -480px;
+  }
+  .photogallery__photo-image {
+    width: 294px;
+  }
+  .photogallery__item:first-child .photogallery__photo {
+    width: 480px;
+  }
+  .photogallery__photo {
+    width: 294px;
+    height: 294px;
+  }
+  .photogallery__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    padding-bottom: 88px;
+  }
+  .photogallery__item:first-child {
+    display: flex;
+    width: 100%;
+    min-height: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .photogallery__item {
+    display: block;
+    width: 30.6%;
+    min-height: 540px;
+    margin-top: 41px;
+  }
+  .photogallery__title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .photogallery__item:first-child .photogallery__srevices {
+    max-width: none;
+  }
+  .photogallery__item:first-child .photogallery__srevices {
+    padding-top: 0;
+  }
+  .photogallery__srevices {
+    margin-top: auto;
+    padding-top: 58px;
+  }
+  .photogallery__item:first-child .photogallery__service {
+    width: auto;
+    margin-top: 0;
+    margin-right: 37px;
+  }
+  .photogallery__item:first-child .photogallery__review {
+    padding-top: 129px;
+    border-top: 1px solid #e5ddd5;
+    border-left: none;
+  }
+  .photogallery__review {
+    display: flex;
+    flex-direction: column;
+    padding: 22px 30px 35px 35px;
+    min-height: 248px;
+    border-top: none;
+    border-left: 1px solid #e5ddd5;
+  }
+  .photogallery__text {
+    margin-top: 29px;
+  }
+}

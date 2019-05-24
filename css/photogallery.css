@@ -111,7 +111,7 @@
 .service-haircut::before {
   width: 21px;
   height: 20px;
-  background-image: url(../../img/service-haircut.png);
+  background-image: url(../img/service-haircut.png);
   left: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -119,7 +119,7 @@
 .service-shaving::before {
   width: 23px;
   height: 20px;
-  background-image: url(../../img/service-shaving.png);
+  background-image: url(../img/service-shaving.png);
   left: 0px;
   top: 50%;
   transform: translateY(-50%);
@@ -127,7 +127,7 @@
 .service-mustache::before {
   width: 45px;
   height: 12px;
-  background-image: url(../../img/service-mustache.png);
+  background-image: url(../img/service-mustache.png);
   left: -12px;
   top: 50%;
   transform: translateY(-50%);
@@ -200,7 +200,7 @@
     height: 480px;
   }
   .photogallery__work-of-the-month {
-    background-image: url(../../img/label-desktop.png);
+    background-image: url(../img/label-desktop.png);
     top: 25px;
     right: -480px;
   }

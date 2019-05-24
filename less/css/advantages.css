@@ -1,0 +1,207 @@
+.advantages {
+  width: 84%;
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #242424;
+}
+.advantages__list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.advantages__title {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding-top: 150px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+.advantages__title--fast::before {
+  position: absolute;
+  content: "";
+  top: 24px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 95px;
+  height: 94px;
+  background-image: url(../img/advantages-scissors.png);
+}
+.advantages__title--cool::before {
+  position: absolute;
+  content: "";
+  top: 24px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 95px;
+  height: 88px;
+  background-image: url(../img/advantages-cool.png);
+}
+.advantages__title--expensive::before {
+  position: absolute;
+  content: "";
+  top: 24px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 95px;
+  height: 91px;
+  background-image: url(../img/advantages-expensive.png);
+}
+.advantages__description {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0 18px;
+  font-size: 20px;
+  text-align: center;
+}
+.advantages__item {
+  display: none;
+}
+.slider__item--active {
+  display: block;
+}
+.advantages__toogle {
+  margin: 0;
+  margin-bottom: 13px;
+  text-align: center;
+}
+.slider__toggle {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  margin-left: 23px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.slider__toggle--active {
+  margin-left: 0;
+  border: 2px solid #ffffff;
+  background-color: #fff;
+}
+.slider__toggle span {
+  display: none;
+}
+@media (min-width: 768px) {
+  .advantages__item--cool,
+  .advantages__item--expensive {
+    display: block;
+  }
+  .advantages {
+    background-color: #353535;
+  }
+  .advantages__item {
+    position: relative;
+  }
+  .advantages__title {
+    margin: 0;
+    padding-top: 43px;
+    padding-left: 160px;
+    text-align: left;
+  }
+  .advantages__description {
+    position: relative;
+    margin: 0;
+    padding: 13px 24px 39px 160px;
+    text-align: left;
+  }
+  .slider__list {
+    margin-bottom: 43px;
+  }
+  .advantages__item::after {
+    position: absolute;
+    content: "";
+    left: 160px;
+    right: 40px;
+    height: 1px;
+    background-color: #4a4a4a;
+  }
+  .advantages__item:last-child::after {
+    display: none;
+  }
+  .advantages__title--fast::before {
+    position: absolute;
+    content: "";
+    top: 46px;
+    left: 78px;
+    width: 95px;
+    height: 94px;
+    background-image: url(../img/advantages-scissors.png);
+  }
+  .advantages__title--cool::before {
+    position: absolute;
+    content: "";
+    top: 46px;
+    left: 78px;
+    width: 95px;
+    height: 88px;
+    background-image: url(../img/advantages-cool.png);
+  }
+  .advantages__title--expensive::before {
+    position: absolute;
+    content: "";
+    top: 46px;
+    left: 78px;
+    width: 95px;
+    height: 91px;
+    background-image: url(../img/advantages-expensive.png);
+  }
+  .news svg {
+    height: 42px;
+  }
+  .news polygon {
+    fill: #353535;
+  }
+  .advantages__toogle {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .advantages__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .advantages {
+    max-width: 1200px;
+  }
+  .advantages__title {
+    padding: 0;
+    padding-top: 203px;
+    text-align: center;
+  }
+  .advantages__description {
+    padding: 12px 38px 0;
+    text-align: center;
+  }
+  .advantages__item {
+    width: 320px;
+  }
+  .advantages__item::after {
+    display: none;
+  }
+  .advantages__title--fast::before {
+    top: 79px;
+    left: 50%;
+  }
+  .advantages__title--cool::before {
+    top: 79px;
+    left: 50%;
+  }
+  .advantages__title--expensive::before {
+    top: 79px;
+    left: 50%;
+  }
+  .advantages__toogle {
+    display: none;
+  }
+}
